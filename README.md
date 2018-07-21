@@ -3,6 +3,26 @@
 Upscale or stretch any video on the web, to make it look great on UltraWide screens.
 
 
+## Installation (pick one)
+
+1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
+2. [Mozilla Addon](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
+
+
+## Options
+
+Each option is a switch toggle, and it has only two possible values. 
+You can either toggle an option _off_ or _on_.
+
+| Name              | Default Value |
+| ----------------- | ------------- |
+| `Pause Extension` | off           |
+| `Upscale`         | on            |
+| `Stretch`         | off           |
+
+> Default value is a value being set, once the plugin has been installed.
+
+
 ## More information
 
 This extension resolves aspect ratio incompatibility with Ultra Wide screens.
@@ -22,28 +42,8 @@ This extension is blazingly fast, tiny build and works with any website that str
 **Tested** and **working** with following video players:
 JW Player, VideoJS, Plyr, MediaElementJS, jPlayer, AfterGlow, HTML5 Video
 
-*Tested* and *working* with following video embeds:
+**Tested** and **working** with following video embeds:
 YouTube, Vimeo, DailyMotion
 
 **Tested** across **many** websites and it's not worth mentioning, the list is huge. It works literally everywhere, but to mention a few:
 YouTube, Vimeo, DailyMotion, Netflix... many explicit video content websites, etc.
-
-
-## Installation (pick one)
-
-1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
-2. [Mozilla Addon](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
-
-
-## Options
-
-Each option is a switch toggle, and it has only two possible values. 
-You can either toggle an option _off_ or _on_.
-
-| Name              | Default Value |
-| ----------------- | ------------- |
-| `Pause Extension` | off           |
-| `Upscale`         | on            |
-| `Stretch`         | off           |
-
-> Default value is a value being set, once the plugin has been installed.
