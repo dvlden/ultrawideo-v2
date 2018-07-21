@@ -10,7 +10,11 @@
   },
   "browser_action": {
     "default_title": "UltraWideo",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png"
+    }
   },
   "permissions": ["storage"],
   "content_scripts": [{
