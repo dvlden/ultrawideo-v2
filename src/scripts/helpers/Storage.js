@@ -1,13 +1,21 @@
-const isChrome = () => typeof chrome !== 'undefined'
+// Future reference:
+// window.navigator.userAgent.includes('Edge')
+// When Edge starts supporting "object-fit" on videos, I should check for the snippet above
+// in "get()"" method, within "if" statement, cause at this point, Edge's API is incorrect
+// and expects callback as second argument. It's exactly the same as Chrome's API, but uses
+// "browser" instead of "chrome". Weird bug, good job Edge.
+// Your suck, just like all of your ancestors! 👏
+
+import browserApi from './browserApi'
 
 export default class Storage {
   constructor (type = 'local') {
-    this.api = (chrome || browser).storage
+    this.api = browserApi.resolve().storage
     this.store = this.api[type]
   }
 
   get (keys) {
-    if (isChrome) {
+    if (browserApi.isChrome()) {
       return new Promise(resolve => {
         this.store.get(keys, result => resolve(result))
       })
@@ -17,7 +25,7 @@ export default class Storage {
   }
 
   set (keys) {
-    if (isChrome) {
+    if (browserApi.isChrome()) {
       return new Promise(resolve => {
         this.store.set(keys, () => resolve())
       })
@@ -34,6 +42,3 @@ export default class Storage {
     )
   }
 }
-
-
-

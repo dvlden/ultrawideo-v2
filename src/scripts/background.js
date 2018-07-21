@@ -1,7 +1,8 @@
+import browserApi from './helpers/browserApi'
 import Storage from './helpers/Storage'
 
-const api = (chrome || browser)
-let storage = new Storage
+const api = browserApi.resolve()
+const storage = new Storage
 
 api.runtime.onInstalled.addListener(() => {
   const defaultSettings = {

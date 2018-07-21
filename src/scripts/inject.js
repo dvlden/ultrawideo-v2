@@ -9,9 +9,9 @@ class Inject {
     this.storage = new Storage
     this.fullscreen = new FullScreen
 
+    this.setFullScreenEvent()
     this.getSettingsFromStorage()
     this.listenForStorageChanges()
-    this.setFullScreenEvent()
   }
 
   getSettingsFromStorage () {
@@ -29,10 +29,11 @@ class Inject {
       if ('master' in changes) {
         this.settings.master = changes.master.newValue
 
-        if (changes.master.newValue === true) {
+        if (changes.master.newValue) {
           this.fullscreen.destroyEvent()
         }
-        else {
+
+        if (changes.master.oldValue) {
           this.fullscreen.listenEvent()
         }
       }

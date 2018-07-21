@@ -1,7 +1,7 @@
 {
   "name": "ultrawideo",
   "description": "Upscale or stretch any video on the web, to make it look great on UltraWide screens.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "author": {
     "name": "Nenad Novaković",
@@ -26,7 +26,8 @@
     "extension",
     "browser",
     "chrome",
-    "firefox"
+    "firefox",
+    "opera"
   ],
   "browserslist": [
     "last 1 major version",
