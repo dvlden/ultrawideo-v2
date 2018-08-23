@@ -6,8 +6,8 @@ class Inject {
   constructor () {
     this.bodyEl = document.body
     this.settings = {}
-    this.storage = new Storage
-    this.fullscreen = new FullScreen
+    this.storage = new Storage()
+    this.fullscreen = new FullScreen()
 
     this.setFullScreenEvent()
     this.getSettingsFromStorage()
@@ -26,6 +26,8 @@ class Inject {
 
   listenForStorageChanges () {
     this.storage.listener(changes => {
+      this.inFullScreen(changes)
+
       if ('master' in changes) {
         this.settings.master = changes.master.newValue
 
@@ -49,6 +51,25 @@ class Inject {
       let videoEl = document.querySelector('video')
       videoEl ? resolve(videoEl) : reject()
     })
+  }
+
+  inFullScreen (settings) {
+    if (!document[this.fullscreen.api.el]) return
+
+    if ('master' in settings) {
+      this.bodyEl.classList[
+        !settings.master.newValue
+          ? 'add'
+          : 'remove'
+      ](classes.body)
+    }
+
+    if ('mode' in settings) {
+      this.checkForVideoElement().then(videoEl => {
+        videoEl.classList.remove(classes.modes[settings.mode.oldValue])
+        videoEl.classList.add(classes.modes[settings.mode.newValue])
+      })
+    }
   }
 
   setFullScreenEvent () {

@@ -58,6 +58,10 @@ body {
   }
 }
 
+.options {
+  margin-bottom: 1.5rem;
+}
+
 .option {
   display: flex;
   justify-content: space-between;
@@ -120,5 +124,23 @@ body {
     background-color: #a152ff;
     transform: translate(100%, -50%);
   }
+}
 
+.shortcuts {
+  padding-left: unset;
+  margin-left: unset;
+  list-style-type: none;
+  color: #696969;
+
+  kbd {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    font-size: .7rem;
+    color: #fafafa;
+    background-color: #a152ff;
+    border-radius: .2rem;
+  }
 }

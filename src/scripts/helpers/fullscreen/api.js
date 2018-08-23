@@ -1,4 +1,4 @@
-import { unprefixed, prefixed } from '../../store/fullscreenApi'
+import { unprefixed, prefixed } from '~/store/fullscreenApi'
 
 let api = unprefixed
 

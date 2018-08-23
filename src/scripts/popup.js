@@ -15,10 +15,11 @@ class Settings {
 
   syncWithElements (settings) {
     Array.from(this.elements).forEach(element => {
-      if (element.dataset.key === 'master') {
+      if (element.dataset.key === 'master' && settings.hasOwnProperty('master')) {
         element.checked = settings.master
       }
-      else {
+
+      if (element.dataset.key !== 'master' && settings.hasOwnProperty('mode')) {
         element.checked = (element.dataset.key === settings.mode)
       }
     })
@@ -59,6 +60,16 @@ class Settings {
 
   listenForEvents () {
     document.addEventListener('change', this.onToggleCallback, false)
+
+    this.storage.listener(changes => {
+      if ('master' in changes) {
+        this.syncWithElements({ master: changes.master.newValue })
+      }
+
+      if ('mode' in changes) {
+        this.syncWithElements({ mode: changes.mode.newValue })
+      }
+    })
   }
 }
 

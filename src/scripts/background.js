@@ -24,3 +24,17 @@ storage.listener(changes => {
     })
   }
 })
+
+api.commands.onCommand.addListener(command => {
+  storage.get(['master', 'mode']).then(settings => {
+    switch (command) {
+      case 'toggle-pause':
+        storage.set({ 'master': !settings.master })
+        break
+
+      case 'toggle-mode':
+        storage.set({ 'mode': (settings.mode === 'upscale') ? 'stretch' : 'upscale' })
+        break
+    }
+  })
+})
