@@ -1,7 +1,7 @@
 {
   "name": "UltraWideo",
   "description": "Upscale or stretch any video on the web, to make it look great on UltraWide screens.",
-  "version": "1.3",
+  "version": "1.4",
   "author": "Nenad Novaković - dvlden",
   "manifest_version": 2,
   "background": {
