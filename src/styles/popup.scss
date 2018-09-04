@@ -136,11 +136,13 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    min-width: 1.5rem;
-    min-height: 1.5rem;
+    min-width: 1.3rem;
+    min-height: 1.3rem;
     font-size: .7rem;
     color: #fafafa;
     background-color: #a152ff;
     border-radius: .2rem;
+    padding: 0 .3rem;
+    vertical-align: middle;
   }
 }

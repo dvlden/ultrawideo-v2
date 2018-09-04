@@ -1,7 +1,7 @@
 {
   "name": "UltraWideo",
   "description": "Upscale or stretch any video on the web, to make it look great on UltraWide screens.",
-  "version": "1.4",
+  "version": "1.5",
   "author": "Nenad Novaković - dvlden",
   "manifest_version": 2,
   "background": {
@@ -32,14 +32,14 @@
   "commands": {
     "toggle-pause": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Up"
+        "default": "Ctrl+Shift+9"
       },
       "description": "Send a 'toggle-pause' event to the extension",
       "global": true
     },
     "toggle-mode": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Down"
+        "default": "Ctrl+Shift+0"
       },
       "description": "Send a 'toggle-mode' event to the extension",
       "global": true

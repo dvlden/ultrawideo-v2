@@ -11,6 +11,12 @@ class Settings {
     })
 
     this.listenForEvents()
+
+    if (window.navigator.platform.toLowerCase().includes('mac')) {
+      Array.from(document.querySelectorAll('.os-detect')).forEach(el => {
+        el.textContent = 'cmd'
+      })
+    }
   }
 
   syncWithElements (settings) {
