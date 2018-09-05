@@ -28,10 +28,12 @@ You can either toggle an option _off_ or _on_.
 
 Options can be toggled via predefined shortcuts.
 
-| Name           | Keystrokes Descriptive | Keystrokes Visual                                        |
-| -------------- | ---------------------- | -------------------------------------------------------- |
-| `Toggle Pause` | `cmd + shift + up`     | <kbd>&#8984;</kbd> <kbd>&#8679;</kbd> <kbd>&#8593;</kbd> |
-| `Toggle Modes` | `cmd + shift + down`   | <kbd>&#8984;</kbd> <kbd>&#8679;</kbd> <kbd>&#8595;</kbd> |
+| Name           | Keystrokes Descriptive |
+| -------------- | ---------------------- |
+| `Toggle Pause` | `ctrl + shift + 9`     |
+| `Toggle Modes` | `ctrl + shift + 0`     |
+
+> * note: `ctrl` becomes `cmd` on macOS.
 
 
 ## More information
