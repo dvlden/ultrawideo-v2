@@ -33,7 +33,7 @@ Options can be toggled via predefined shortcuts.
 | `Toggle Pause` | `ctrl + shift + 9`     |
 | `Toggle Modes` | `ctrl + shift + 0`     |
 
-> note: `ctrl` becomes `cmd` on macOS.
+> **note:** `ctrl` becomes `cmd` on macOS.
 
 
 ## More information
