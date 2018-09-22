@@ -8,6 +8,7 @@ Upscale or stretch any video on the web, to make it look great on UltraWide scre
 1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
 2. [Mozilla Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
 3. [Opera Extension](https://addons.opera.com/en/extensions/details/ultrawideo/)
+4. [Whale Extension](https://store.whale.naver.com/detail/lceccdkmdhebaiojbjdplcdpadehipbm)
 
 
 ## Options
