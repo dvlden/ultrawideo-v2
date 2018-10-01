@@ -1,7 +1,7 @@
 {
   "name": "ultrawideo",
   "description": "Upscale or stretch any video on the web, to make it look great on UltraWide screens.",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "private": true,
   "author": {
     "name": "Nenad Novaković",
@@ -34,18 +34,18 @@
     "> 1%"
   ],
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.54",
-    "@babel/preset-env": "^7.0.0-beta.54",
-    "autoprefixer": "^9.0.0",
-    "babel-loader": "^8.0.0-beta.4",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.1.5",
+    "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
-    "cssnano": "^4.0.0-rc.2",
-    "mini-css-extract-plugin": "^0.4.1",
+    "cssnano": "^4.1.4",
+    "mini-css-extract-plugin": "^0.4.3",
     "node-sass": "^4.9.2",
-    "postcss-loader": "^2.1.6",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.0.3",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.0.8"
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
