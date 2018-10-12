@@ -48,7 +48,7 @@ class Inject {
 
   checkForVideoElement () {
     return new Promise((resolve, reject) => {
-      let videoEl = document.querySelector('video')
+      let videoEl = document.querySelector('video:not([title])')
       videoEl ? resolve(videoEl) : reject()
     })
   }
