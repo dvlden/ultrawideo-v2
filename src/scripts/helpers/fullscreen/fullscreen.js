@@ -12,10 +12,14 @@ export default class FullScreen {
   }
 
   listenEvent () {
-    document.addEventListener(this.api.event, this.onChangeCallback, false)
+    ['', 'webkit', 'moz'].forEach(prefix => {
+      document.addEventListener(prefix + 'fullscreenchange', this.onChangeCallback, false)
+    })
   }
 
   destroyEvent () {
-    document.removeEventListener(this.api.event, this.onChangeCallback, false)
+    ['', 'webkit', 'moz'].forEach(prefix => {
+      document.removeEventListener(prefix + 'fullscreenchange', this.onChangeCallback, false)
+    })
   }
 }
