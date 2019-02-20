@@ -19,8 +19,6 @@ Steps to reproduce the behavior...
 ### Expected behavior
 A clear and concise description of what you expected to happen...
 
-
 ### Environment
-
 - **OS**: [e.g. macOS v10.14.3]
 - **Browser**: [e.g. Chrome v72.0.3626.109]

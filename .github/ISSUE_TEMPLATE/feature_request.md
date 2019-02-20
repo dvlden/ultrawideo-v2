@@ -1,17 +1,15 @@
 ---
 name: Feature request
-about: Suggest an idea for a new feature in UltraWideo
+about: Suggest an idea for a new feature in UltraWideo...
 title: ''
 labels: enhancement
 assignees: ''
 
 ---
 
-**Before Opening**
-
+## Before Opening
 [Search for duplicate or closed issues](https://github.com/dvlden/ultrawideo/issues?utf8=%E2%9C%93&q=is%3Aissue)
 
 
-**Information**
-
+### Information
 Include as much detail as possible for this feature and why would it be useful or required to implement it.
