@@ -1,9 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for a new feature in UltraWideo...
-title: ''
 labels: enhancement
-assignees: ''
 
 ---
 
