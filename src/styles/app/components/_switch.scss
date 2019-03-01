@@ -1,0 +1,51 @@
+.switch {
+  position: relative;
+  width: 28px;
+  height: 12px;
+  display: inline-block;
+
+  input {
+    all: unset;
+    background-color: hsla(var(--color-light), 1);
+    width: 100%;
+    height: 100%;
+    border-radius: calc(var(--base-radius) * 2);
+    display: block;
+    transition: background-color linear 80ms;
+    cursor: pointer;
+  }
+
+  input:checked {
+    background-color: hsla(var(--color-primary), .5);
+  }
+
+  input:checked:active + label::before {
+    box-shadow: 0 0 0 10px hsla(var(--color-primary), .2);
+  }
+
+  input:active + label::before {
+    box-shadow: 0 0 0 10px hsla(var(--color-black), .2);
+  }
+
+  label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: hsla(var(--color-white), 1);
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: block;
+    transform: translateY(-50%);
+    box-shadow: 0 1px 3px 0 hsla(var(--color-black), .4);
+    transition: transform linear 80ms, background-color linear 80ms;
+    z-index: 1;
+  }
+
+  input:checked + label::before {
+    background-color: hsla(var(--color-primary), 1);
+    transform: translate(100%, -50%);
+  }
+}

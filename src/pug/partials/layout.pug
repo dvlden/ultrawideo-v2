@@ -1,0 +1,25 @@
+block config
+  - const manifest = require('./manifest')
+  - const data = require('./pug/data')
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+
+    title #{manifest.name} - #{title}
+
+    block styles
+      link(href=`https://fonts.googleapis.com/css?family=${font}` rel='stylesheet')
+
+  body
+    section.uwv(data-version=`v${manifest.version}`)
+      include header
+      
+      main.uwv-body
+        block content
+
+      include footer
+    
+    block scripts

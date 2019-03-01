@@ -1,0 +1,11 @@
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+
+  &-name {
+    text-transform: capitalize;
+    color: hsla(var(--color-secondary), 1);
+  }
+}

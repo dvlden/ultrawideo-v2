@@ -1,0 +1,28 @@
+.input {
+  input {
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    border: none;
+    font: {
+      family: 'Roboto Condensed';
+      weight: 400;
+    }
+    line-height: var(--base-line-height);
+    border-bottom: 2px solid hsla(var(--color-light), 1);
+    color: hsla(var(--color-dark), 1);
+    height: 100%;
+    padding: .375rem .25rem;
+    text-transform: uppercase;
+    transition: border-color .1s ease-in-out, padding-top .1s ease-in-out;
+
+    &::placeholder {
+      color: hsla(var(--color-light), 1);
+    }
+
+    &:focus {
+      border-bottom-color: hsla(var(--color-primary), 1);
+      outline: none;
+    }
+  }
+}

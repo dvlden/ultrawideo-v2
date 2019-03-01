@@ -1,3 +1,4 @@
-extension/dist
 node_modules
-extension.zip
+dist
+coverage
+build.zip

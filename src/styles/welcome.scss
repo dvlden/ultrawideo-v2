@@ -1,0 +1,90 @@
+@import 'app/variables';
+@import 'app/reset';
+@import 'app/animations';
+@import 'app/base';
+
+@import 'app/components/category';
+@import 'app/components/list';
+@import 'app/components/logo';
+
+.logo {
+  --icon-size: 64px;
+  --icon-spacing: .8rem;
+  --icon-font-size: 2.4rem;
+}
+
+.uwv {
+  --container-width: 768px;
+  --container-gutter-x: 2rem;
+  --container-gutter-y: 1.5rem;
+  --space-between-sections: 2.5rem;
+  
+  margin: {
+    right: auto;
+    left: auto;
+  }
+  
+  &-foot {
+    font-size: .8rem;
+  }
+}
+
+.category {
+  --section-spacing: 3rem;
+}
+
+.intro {
+  --main-spacing: 5rem;
+  
+  text-align: center;
+  margin-top: var(--main-spacing);
+  margin-bottom: var(--main-spacing);
+
+  &-title {
+    color: hsla(var(--color-primary), 1);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  &-description {
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    p {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+.browser-list {
+  --main-spacing: 5rem;
+  
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: {
+    top: var(--main-spacing);
+    bottom: var(--main-spacing);
+  }
+  
+  &-link {
+    transition: opacity .2s ease-in-out;
+    
+    &:hover {
+      filter: contrast(200%);
+      opacity: .6;
+    }
+  }
+  
+  &-image {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    color: red;
+  }
+}

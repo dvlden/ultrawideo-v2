@@ -1,0 +1,23 @@
+.logo {
+  --icon-size: 42px;
+  --icon-spacing: .5rem;
+  --icon-font-size: 1.6rem;
+  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  
+  &-icon {    
+    width: var(--icon-size);
+    margin-right: var(--icon-spacing);
+  }
+
+  &-text {
+    font: {
+      size: var(--icon-font-size);
+      weight: 700;
+      family: 'Roboto Condensed';
+    }
+    color: hsla(var(--color-primary), 1);
+  }
+}

@@ -1,44 +1,36 @@
-// Future reference:
-// window.navigator.userAgent.includes('Edge')
-// When Edge starts supporting "object-fit" on videos, I should check for the snippet above
-// in "get()"" method, within "if" statement, cause at this point, Edge's API is incorrect
-// and expects callback as second argument. It's exactly the same as Chrome's API, but uses
-// "browser" instead of "chrome". Weird bug, good job Edge.
-// Your suck, just like all of your ancestors! 👏
+import browser from 'webextension-polyfill'
+import { settingsKeys } from '@/static/defaults'
 
-import browserApi from './browserApi'
-
-export default class Storage {
-  constructor (type = 'local') {
-    this.api = browserApi.resolve().storage
-    this.store = this.api[type]
+class Storage {
+  constructor (area = 'local') {
+    this.storage = browser.storage[area]
+    this._data = {}
   }
 
-  get (keys) {
-    if (browserApi.isChrome()) {
-      return new Promise(resolve => {
-        this.store.get(keys, result => resolve(result))
-      })
-    }
-
-    return this.store.get(keys)
+  set (object) {
+    this.storage.set(object)
   }
 
-  set (keys) {
-    if (browserApi.isChrome()) {
-      return new Promise(resolve => {
-        this.store.set(keys, () => resolve())
-      })
-    }
-
-    return this.store.set(keys)
+  get (any) {
+    return this.storage.get(any)
   }
 
-  listener (callback) {
-    if (!callback instanceof Function) return
+  onChange (callback) {
+    browser.storage.onChanged.addListener(callback)
+  }
 
-    this.api.onChanged.addListener(
-      changes => callback.call(null, changes)
-    )
+  async syncData () {
+    this._data = await this.get(settingsKeys)
+    return Promise.resolve(this._data)
+  }
+
+  set data (object) {
+    this._data = object
+  }
+
+  get data () {
+    return this._data
   }
 }
+
+export default Storage

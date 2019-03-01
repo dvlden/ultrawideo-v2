@@ -1,0 +1,27 @@
+extends pug/partials/layout
+
+block append config
+  - var title = 'Settings'
+  - var font = 'Roboto+Condensed:400,700|Roboto:400,700'
+
+include pug/mixins/input.pug
+include pug/mixins/option.pug
+
+block append styles
+  link(href='styles/popup.css' rel='stylesheet')
+
+block content
+  each category in data.categories
+    .category(class=`for-${category.toLowerCase()}`)
+      .category-head=category
+
+      .category-body
+        each option in data.options
+          if option.category === category.toLowerCase()
+            if option.category !== 'shortcuts'
+              +option(option)
+            else
+              +input(option)
+
+block scripts
+  script(src='scripts/popup.js')

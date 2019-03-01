@@ -1,0 +1,13 @@
+header.uwv-head
+  block header
+    a.logo(
+      href=manifest.homepage_url
+      target='_blank'
+    )
+      img.logo-icon(
+        src=require('images/uwv-icon.svg')
+        alt=manifest.name
+        draggable="false"
+      )
+
+      span.logo-text=manifest.name

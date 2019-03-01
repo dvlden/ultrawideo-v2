@@ -1,0 +1,17 @@
+footer.uwv-foot
+  block footer
+    .copyright
+      | &copy; #{data.copyrightYear()} 
+      a(
+        href='https://dvl.sh/'
+        target='_blank'
+      )=manifest.author
+      | . All rights reserved.
+
+    .license
+      | Licensed under 
+      a(
+        href='https://tldrlegal.com/license/mit-license'
+        target='_blank'
+      ) MIT
+      | .

@@ -1,0 +1,12 @@
+mixin input(data)
+  .option
+    .option-name=data.name
+
+    .input
+      input(
+        type='text'
+        id=data.id
+        data-category=data.category
+        placeholder=data.placeholder
+        readonly
+      )

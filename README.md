@@ -1,63 +1,56 @@
-# UltraWideo - Browser Extension
+<p align="center">
+  <a href="https://github.com/dvlden/ultrawideo">
+    <img src=".github/logo.svg" width="300" alt="UltraWideo" />
+  </a>
+</p>
 
-Upscale or stretch any video on the web, to make it look great on UltraWide screens.
+<p align="center">
+  <i>The cross-browser extension that manipulates video aspect ratio to fit your entire screen.</i>
+</p>
 
+---
 
-## Installation (pick one)
+### Getting started
+
+Select one of the possible options to install this extension, depending on your browser.
 
 1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
-2. [Mozilla Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
-3. [Opera Extension](https://addons.opera.com/en/extensions/details/ultrawideo/)
+2. [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
+3. [Opera Add-on](https://addons.opera.com/en/extensions/details/ultrawideo/)
 4. [Whale Extension](https://store.whale.naver.com/detail/lceccdkmdhebaiojbjdplcdpadehipbm)
 
+> **Note for Opera browser users**: They allow installing extensions directly from Chrome store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) in order to do that.
 
-## Options
+> **Note for Whale browser users**: They allow installing extensions directly from Chrome store. Unlike Opera, you do not need to install any special extension to do this.
 
-Each option is a switch toggle, and it has only two possible values. 
-You can either toggle an option _off_ or _on_.
+<br>
 
-| Name              | Default Value |
-| ----------------- | ------------- |
-| `Pause Extension` | off           |
-| `Upscale`         | on            |
-| `Stretch`         | off           |
+### Introduction
+This is the only extension on the market that has two major functionalities that no other extension in this category has. 
 
-> Default value is a value being set, once the plugin has been installed.
+- Works on all video streaming platforms.
+- Works on all embedded videos.
 
+It doesn't matter if there are multiple direct or embedded video players on a single page. The extension is smart enough to manipulate the video that you put into a fullscreen, without affecting other video players.
 
-## Keyboard Shortcuts
+If you are using multiple browsers on the same or different device, this extension is cross-browser and will work in all major browsers. It has been tested in _Chrome_, _Firefox_ and _Opera_; without a single issue.
+There are many other browsers out there, that uses _Webkit engine_, so the extension will work in those browsers too.
 
-Options can be toggled via predefined shortcuts.
+<br>
 
-| Name           | Keystrokes Descriptive |
-| -------------- | ---------------------- |
-| `Toggle Pause` | `ctrl + shift + 9`     |
-| `Toggle Modes` | `ctrl + shift + 0`     |
+### Who is it for?
+It's for everyone who wants the power over video aspect ratio. This extension is primarily for UltraWide monitors, but that does not mean it's only good for it. You can manipulate the size of the video that contains horizontal or vertical black bars and let the video fill your entire screen for a better experience.
 
-> **note:** `ctrl` becomes `cmd` on macOS.
+<br>
 
+### How to use it?
+The extension is fairly easy to use but very powerful at what it does. It has a couple of options...
 
-## More information
+- **Pause the extension** - _It will stop listening for all memory consuming events and restore any DOM manipulations.  _
+- **Toggle between modes** - _Toggle between different modes that will affect the video: normal, upscale and stretch. _
+- **Configurable shortcuts** - _Set desired keystroke, with min/max of 3 keys to control pause or mode toggling._
 
-This extension resolves aspect ratio incompatibility with Ultra Wide screens.
-You may play 4:3 or 16:9 aspect ratio videos and they will be properly shown on 21:9 aspect ratio screens, without black side edges.
+<br>
 
-You may want to choose "Stretch mode" when you are watching some videos where a person is present in front of you as otherwise the person's forehead may be cropped...
-
-The extension have three simple options. There's no need for complexity that some other extensions provide, it's confusing.
-
-1. pause the extension
-2. use "upscale" mode
-3. use "stretch" mode
-
-With these two modes, you'll be able to control any video on the web as you desire.
-This extension is blazingly fast, tiny build and works with any website that streams videos.
-
-**Tested** and **working** with following video players:
-JW Player, VideoJS, Plyr, MediaElementJS, jPlayer, AfterGlow, HTML5 Video
-
-**Tested** and **working** with following video embeds:
-YouTube, Vimeo, DailyMotion
-
-**Tested** across **many** websites and it's not worth mentioning, the list is huge. It works literally everywhere, but to mention a few:
-YouTube, Vimeo, DailyMotion, Netflix... many explicit video content websites, etc.
+### Works everywhere?
+To be honest while manually testing many video streaming platforms, I found one that wasn't working at all. It has nothing to do with the extension, but rather with their platform development by choice or lack of knowledge.

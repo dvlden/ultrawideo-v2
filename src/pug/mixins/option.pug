@@ -1,0 +1,20 @@
+mixin option(data)
+  .option
+    .option-name=data.name
+
+    .switch
+      if data.category === 'master'
+        input(
+          type='checkbox'
+          id=data.id
+          data-category=data.category
+        )
+      else
+        input(
+          type='radio'
+          name='mode'
+          id=data.id
+          data-category=data.category
+        )
+
+      label(for=data.id)

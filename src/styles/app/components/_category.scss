@@ -1,0 +1,7 @@
+.category {
+  --section-spacing: 2.8rem;
+  
+  &:not(:last-child) {
+    margin-bottom: var(--section-spacing);
+  }
+}

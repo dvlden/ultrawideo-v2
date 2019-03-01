@@ -1,14 +1,6 @@
-/*! UltraWideo
- * Has been tested across many popular websites and many different video players.
- * Listing the websites is an overkill, so below is the list of video players,
- * this extension has been tested on...
- *
- * YouTube, Vimeo, JW Player, VideoJS, Plyr, MediaElementJS, jPlayer, AfterGlow, HTML5 Video
- */
-
 .uwv {
   &-active {
-    .player .vp-player-layout,
+    // Specific for DailyMotion
     .dmp_VideoView-content {
       all: unset !important;
     }

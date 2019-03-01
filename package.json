@@ -1,7 +1,7 @@
 {
   "name": "ultrawideo",
-  "description": "Upscale or stretch any video on the web, to make it look great on UltraWide screens.",
-  "version": "1.7.0",
+  "description": "The cross-browser extension that manipulates video aspect ratio to fit your entire screen.",
+  "version": "2.0.0",
   "private": true,
   "author": {
     "name": "Nenad Novaković",
@@ -10,8 +10,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "webpack --progress --hide-modules --mode development",
-    "build": "webpack --progress --hide-modules --mode production"
+    "dev": "webpack --watch --progress --hide-modules --mode development",
+    "build": "webpack --progress --hide-modules --mode production",
+    "test": "jest --watchAll --coverage"
   },
   "homepage": "https://github.com/dvlden/ultrawideo#readme",
   "bugs": "https://github.com/dvlden/ultrawideo/issues",
@@ -27,25 +28,51 @@
     "browser",
     "chrome",
     "firefox",
-    "opera"
+    "opera",
+    "whale",
+    "aspect ratio",
+    "black bars"
   ],
   "browserslist": [
     "last 1 major version",
     "> 1%"
   ],
+  "jest": {
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/scripts/$1"
+    }
+  },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "autoprefixer": "^9.1.5",
-    "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^1.0.0",
-    "cssnano": "^4.1.4",
-    "mini-css-extract-plugin": "^0.4.3",
-    "node-sass": "^4.9.2",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.4.7",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^5.0.0",
+    "css-loader": "^2.1.0",
+    "cssnano": "^4.1.8",
+    "file-loader": "^3.0.1",
+    "generate-json-webpack-plugin": "^0.3.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.6.0",
+    "jest": "^24.1.0",
+    "jsdom": "^13.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
     "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.0.3",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.16.1",
+    "sass-loader": "^7.1.0",
+    "sinon": "^7.2.4",
+    "sinon-chrome": "^2.3.2",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-fix-style-only-entries": "^0.2.0",
+    "zip-webpack-plugin": "^3.0.0"
+  },
+  "dependencies": {
+    "eventemitter3": "^3.1.0",
+    "webextension-polyfill": "^0.4.0"
   }
 }
