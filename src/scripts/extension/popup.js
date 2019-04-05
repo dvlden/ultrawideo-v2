@@ -1,5 +1,5 @@
 import browser from 'webextension-polyfill'
-import Storage from '@/helpers/storage'
+import Storage from '@/helpers/Storage'
 import Shortcut from '@/modules/shortcut'
 
 class Popup extends Storage {

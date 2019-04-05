@@ -1,3 +1,4 @@
+import Storage from '@/helpers/Storage'
 import Inject from './extension/inject'
 
 const instance = new Inject

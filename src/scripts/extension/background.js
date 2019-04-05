@@ -1,5 +1,5 @@
 import browser from 'webextension-polyfill'
-import Storage from '@/helpers/storage'
+import Storage from '@/helpers/Storage'
 import Icon from '@/modules/icon'
 import * as defaults from '@/static/defaults'
 

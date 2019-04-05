@@ -1,5 +1,5 @@
 import browser from 'webextension-polyfill'
-import Storage from '@/helpers/storage'
+import Storage from '@/helpers/Storage'
 import { classes } from '@/static/defaults'
 import Shortcut from '@/modules/shortcut'
 import FullscreenVideo from '@/modules/fullscreen-video'
