@@ -71,6 +71,7 @@ class Inject extends Storage {
     if (!this.fullscreen.cachedElement) return
 
     document.body.classList.toggle(classes.body)
+
     this.fullscreen.cachedElement.classList.toggle(classes.video)
     this.fullscreen.cachedElement.classList.toggle(classes.modes[this.data.mode])
   }
