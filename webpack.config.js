@@ -73,8 +73,11 @@ module.exports = (env = {}, argv) => {
               loader: 'sass-loader',
               options: {
                 implementation: require('sass'),
-                outputStyle: 'expanded',
-                sourceMap: !isProduction
+                sassOptions: {
+                  fiber: require('fibers'),
+                  outputStyle: 'expanded',
+                  sourceMap: !isProduction
+                }
               }
             }
           ]
@@ -105,17 +108,20 @@ module.exports = (env = {}, argv) => {
                 disable: !isProduction,
                 mozjpeg: {
                   progressive: true,
-                  quality: 80
+                  quality: 65
                 },
                 optipng: {
                   enabled: false
                 },
                 pngquant: {
-                  quality: '80-90',
-                  speed: 5
+                  quality: [0.65, 0.90],
+                  speed: 4
                 },
                 gifsicle: {
                   interlaced: false
+                },
+                webp: {
+                  quality: 75
                 }
               }
             }
