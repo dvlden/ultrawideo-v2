@@ -9,8 +9,7 @@ const plugins = {
   makeJSON: require('generate-json-webpack-plugin'),
   copy: require('copy-webpack-plugin'),
   html: require('html-webpack-plugin'),
-  zip: require('zip-webpack-plugin'),
-  fixStyleOnlyEntries: require('webpack-fix-style-only-entries')
+  zip: require('zip-webpack-plugin')
 }
 
 module.exports = (env = {}, argv) => {
@@ -172,7 +171,6 @@ module.exports = (env = {}, argv) => {
       ]
 
       let production = [
-        new plugins.fixStyleOnlyEntries(),
         new plugins.zip({
           path: path.resolve(__dirname),
           filename: 'build.zip'

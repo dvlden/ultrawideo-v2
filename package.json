@@ -1,7 +1,7 @@
 {
   "name": "ultrawideo",
   "description": "The cross-browser extension that manipulates video aspect ratio to fit your entire screen.",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "private": true,
   "author": {
     "name": "Nenad Novaković",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack --watch --progress --hide-modules --mode development",
-    "build": "webpack --progress --hide-modules --mode production",
+    "build": "webpack --progress --hide-modules --mode production && rimraf dist/scripts/welcome.js",
     "test": "jest --watchAll --coverage"
   },
   "homepage": "https://github.com/dvlden/ultrawideo#readme",
@@ -43,37 +43,36 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
-    "autoprefixer": "^9.7.1",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "autoprefixer": "^9.7.4",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.0.5",
-    "css-loader": "^3.2.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
     "fibers": "^4.0.2",
-    "file-loader": "^4.2.0",
+    "file-loader": "^5.0.2",
     "generate-json-webpack-plugin": "^0.3.1",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
     "jest": "^24.9.0",
-    "jsdom": "^15.2.1",
-    "mini-css-extract-plugin": "^0.8.0",
+    "jsdom": "^16.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "postcss-loader": "^3.0.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
-    "sass": "^1.23.3",
-    "sass-loader": "^8.0.0",
-    "sinon": "^7.5.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "sinon": "^8.1.0",
     "sinon-chrome": "^3.0.1",
-    "webpack": "^4.41.2",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-fix-style-only-entries": "^0.4.0",
     "zip-webpack-plugin": "^3.0.0"
   },
   "dependencies": {
     "eventemitter3": "^4.0.0",
-    "webextension-polyfill": "^0.5.0"
+    "webextension-polyfill": "^0.6.0"
   }
 }

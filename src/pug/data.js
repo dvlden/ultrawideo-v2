@@ -38,17 +38,17 @@ const options = [
 const browsers = [
   {
     name: 'Chrome',
-    icon: require('../images/brand-icons/chrome.svg'),
+    icon: require('../images/brand-icons/chrome.svg').default,
     link: 'https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl'
   },
   {
     name: 'Firefox',
-    icon: require('../images/brand-icons/firefox.svg'),
+    icon: require('../images/brand-icons/firefox.svg').default,
     link: 'https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/'
   },
   {
     name: 'Opera',
-    icon: require('../images/brand-icons/opera.svg'),
+    icon: require('../images/brand-icons/opera.svg').default,
     link: 'https://addons.opera.com/en/extensions/details/ultrawideo/'
   }
 ]
