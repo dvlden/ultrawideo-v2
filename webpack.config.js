@@ -140,7 +140,9 @@ module.exports = (env = {}, argv) => {
 
     plugins: (() => {
       let common = [
-        new plugins.clean(),
+        new plugins.clean({
+          cleanAfterEveryBuildPatterns: ['!icons/*', '!manifest.json']
+        }),
         new plugins.copy([
           {
             from: 'icons/**/*.png'
