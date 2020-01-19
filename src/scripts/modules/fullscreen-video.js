@@ -21,7 +21,13 @@ class FullscreenVideo extends Fullscreen {
       return element
     }
 
-    return element.querySelector('video')
+    /** Attempt to get correct video element
+    * Amazon Prime: has two video elements (unknown, content)
+    * Hulu: has three video elements (intro, ad, content)
+    */
+    return Array.from(element.querySelectorAll('video')).filter(
+      element => element.src || element.currentSrc
+    )[0]
   }
 }
 
