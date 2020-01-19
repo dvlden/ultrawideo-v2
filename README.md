@@ -10,6 +10,11 @@
 
 ---
 
+![License](https://img.shields.io/github/license/dvlden/ultrawideo?color=%238a5fff&label=License&style=flat-square)
+![Version](https://img.shields.io/github/package-json/version/dvlden/ultrawideo?color=%238a5fff&label=Version&style=flat-square)
+![Chrome rating](https://img.shields.io/chrome-web-store/rating/bfbnagnphiehemkdgmmficmjfddgfhpl?color=%238a5fff&label=Chrome%20rating&style=flat-square)
+![Firefox rating](https://img.shields.io/amo/rating/ultrawideo?color=%238a5fff&label=Firefox%20rating&style=flat-square)
+
 ### Getting started
 
 Select one of the possible options to install this extension, depending on your browser.
