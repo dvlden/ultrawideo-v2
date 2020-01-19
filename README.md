@@ -55,9 +55,8 @@ The extension is fairly easy to use but very powerful at what it does. It has a 
 <br>
 
 ### Works everywhere?
-To be honest, it is working on all **globally popular** video streaming platforms. Making a list of all platforms where this extension works would be huge and time consuming, so it's better to build a list of platforms where this extension doesn't work and specify the reason why...
+To be honest, it is working on all **globally popular** video streaming platforms. Making a list of all platforms where this extension works would be huge and time consuming, so it's better to build a list of platforms where this extension doesn't work and specify the reason why.
 
 | Platform | Issue | 
 | --- | --- |
 | [Movistar](https://ver.movistarplus.es/) | [investigation](https://github.com/dvlden/ultrawideo/issues/12#issuecomment-502765621) |
-| [Plex](https://plex.tv/) | [investigation](https://github.com/dvlden/ultrawideo/issues/10#issuecomment-501429032) |
