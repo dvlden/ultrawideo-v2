@@ -65,3 +65,12 @@ To be honest, it is working on all **globally popular** video streaming platform
 | Platform | Issue | 
 | --- | --- |
 | [Movistar](https://ver.movistarplus.es/) | [investigation](https://github.com/dvlden/ultrawideo/issues/12#issuecomment-502765621) |
+
+
+### Donations
+I'd like to take a minute and show my gratitude to every single donation that I received. I'll be updating the list accordingly.
+
+- Paul Mertens
+- Shahrul Azlan
+
+THANKS! 🙌
