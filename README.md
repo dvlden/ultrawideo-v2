@@ -72,5 +72,6 @@ I'd like to take a minute and show my gratitude to every single donation that I 
 
 - Paul Mertens
 - Shahrul Azlan
+- Jelle Kaufmann
 
 THANKS! 🙌
