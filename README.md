@@ -22,11 +22,8 @@ Select one of the possible options to install this extension, depending on your 
 1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
 2. [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
 3. [Opera Add-on](https://addons.opera.com/en/extensions/details/ultrawideo/)
-4. [~~Whale Extension~~](https://store.whale.naver.com/detail/lceccdkmdhebaiojbjdplcdpadehipbm) _(deprecated, see the note below.)_
 
-> **Note for Opera browser users**: They allow installing extensions directly from Chrome store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) in order to do that.
-
-> **Note for Whale browser users**: They allow installing extensions directly from Chrome store. Unlike Opera, you do not need to install any special extension to do this.
+> **Note for Opera browser users**: They allow installing extensions directly from Chrome store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) in order to do that. I strongly suggest installing the extension this way, because Opera add-ons approval is insanely slow.
 
 > I am considering to deprecate Opera Add-on as well, because as the note from above says, you can install their official chrome extension add-on that will allow installing all extensions from the Chrome store. Why to deprecate? - Simply because Opera approvals take longer than 20 days. If they enroll me into automatic-approval program, I will keep it on their store as well.
 
@@ -73,5 +70,6 @@ I'd like to take a minute and show my gratitude to every single donation that I 
 - Paul Mertens
 - Shahrul Azlan
 - Jelle Kaufmann
+- Manuel Prussenowsky
 
 THANKS! 🙌
