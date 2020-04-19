@@ -1,4 +1,5 @@
 import Fullscreen from './fullscreen'
+import hasBlob from '@/helpers/hasBlob'
 
 class FullscreenVideo extends Fullscreen {
   constructor () {
@@ -21,13 +22,13 @@ class FullscreenVideo extends Fullscreen {
       return element
     }
 
-    /** Attempt to get correct video element
-    * Amazon Prime: has two video elements (unknown, content)
-    * Hulu: has three video elements (intro, ad, content)
-    */
-    return Array.from(element.querySelectorAll('video')).filter(
-      element => element.src || element.currentSrc
-    )[0]
+    return Array.from(element.querySelectorAll('video')).filter(element => {
+      if (/(amazon|primevideo|hulu)/.test(window.location.hostname)) {
+        return hasBlob(element)
+      }
+
+      return (element.src || element.currentSrc)
+    })[0]
   }
 }
 
