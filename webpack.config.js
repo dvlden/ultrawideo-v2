@@ -143,11 +143,13 @@ module.exports = (env = {}, argv) => {
         new plugins.clean({
           cleanAfterEveryBuildPatterns: ['!icons/*', '!manifest.json']
         }),
-        new plugins.copy([
-          {
-            from: 'icons/**/*.png'
-          }
-        ]),
+        new plugins.copy({
+          patterns: [
+            {
+              from: 'icons/**/*.png'
+            }
+          ]
+        }),
         new plugins.html({
           template: 'popup.pug',
           filename: 'popup.html',

@@ -22,18 +22,15 @@ describe('tests for fullscreen-video module', () => {
     global.instance = new FullscreenVideo
     global.videoElement = document.createElement('video')
     global.videoElementTwo = document.createElement('video')
-    global.videoElementThree = document.createElement('video')
     global.wrappedVideoElement = document.createElement('div')
 
     wrappedVideoElement.appendChild(videoElement)
     wrappedVideoElement.appendChild(videoElementTwo)
-    wrappedVideoElement.appendChild(videoElementThree)
   })
 
   afterEach(() => {
     videoElement.src = ''
     videoElementTwo.src = ''
-    videoElementThree.src = ''
   })
 
   afterAll(() => {
@@ -76,7 +73,6 @@ describe('tests for fullscreen-video module', () => {
 
       videoElement.src = '//video.source'
       videoElementTwo.src = '//video-2.source'
-      videoElementThree.src = '//video-3.source'
 
       expect(instance.videoElement).toBe(videoElement)
     })
@@ -87,7 +83,6 @@ describe('tests for fullscreen-video module', () => {
 
       videoElement.src = '//video.source'
       videoElementTwo.src = 'blob://video-2.source'
-      videoElementThree.src = '//video-3.source'
 
       setHostname(platforms.amazon[0])
       expect(instance.videoElement).toBe(videoElementTwo)
