@@ -74,5 +74,6 @@ I'd like to take a minute and show my gratitude to every single donation that I 
 - Christian Kulhei
 - Timothy Park
 - Ariel Bobadilla
+- Ronald Ison
 
 THANKS! 🙌
