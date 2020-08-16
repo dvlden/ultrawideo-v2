@@ -4,10 +4,7 @@
     display: block;
     width: 100%;
     border: none;
-    font: {
-      family: 'Roboto Condensed';
-      weight: 400;
-    }
+    font-family: var(--font-family-mono);
     line-height: var(--base-line-height);
     border-bottom: 2px solid hsla(var(--color-light), 1);
     color: hsla(var(--color-dark), 1);

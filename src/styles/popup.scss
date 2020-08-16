@@ -11,7 +11,7 @@
 
 .uwv {
   min-width: var(--container-width);
-  
+
   &::before {
     content: attr(data-version);
     background-color: hsla(var(--color-primary), 1);
@@ -32,7 +32,7 @@
 .category {
   --title-spacing: 1rem;
   --title-size: .8rem;
-  
+
   &-head {
     font: {
       family: 'Roboto Condensed';
@@ -43,4 +43,63 @@
     color: hsla(var(--color-light), 1);
     margin-bottom: var(--title-spacing);
   }
+
+  &-tooltip {
+    background-color: hsl(var(--color-primary));
+    position: relative;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: var(--spacing-s);
+    color: hsl(var(--color-white));
+    text-transform: initial;
+
+    &::before,
+    &::after {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .2s ease-in-out;
+      will-change: opacity;
+    }
+
+    &::before {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 150%;
+      left: 50%;
+      width: 200px;
+      background-color: hsla(var(--color-primary), .9);
+      color: hsl(var(--color-white));
+      padding: var(--spacing-s);
+      border-radius: var(--base-radius);
+      font-size: var(--font-size-xs);
+      text-align: center;
+      transform: translateX(-10%);
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      bottom: 150%;
+      left: 50%;
+      width: 0;
+      border-top: 5px solid hsla(var(--color-primary, .9));
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      transform: translateY(5px) translateX(-50%);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 }
+
+

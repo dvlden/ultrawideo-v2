@@ -1,10 +1,7 @@
 const manifest = require('./src/manifest')
 const path = require('path')
 const plugins = {
-  clean: (() => {
-    const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-    return CleanWebpackPlugin
-  })(),
+  clean: require('clean-webpack-plugin').CleanWebpackPlugin,
   extractCSS: require('mini-css-extract-plugin'),
   makeJSON: require('generate-json-webpack-plugin'),
   copy: require('copy-webpack-plugin'),
@@ -141,7 +138,7 @@ module.exports = (env = {}, argv) => {
     plugins: (() => {
       let common = [
         new plugins.clean({
-          cleanAfterEveryBuildPatterns: ['!icons/*', '!manifest.json']
+          cleanOnceBeforeBuildPatterns: []
         }),
         new plugins.copy({
           patterns: [

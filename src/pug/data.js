@@ -1,4 +1,13 @@
-const categories = ['Master', 'Modes', 'Shortcuts']
+const categories = [{
+  title: 'Master',
+  tooltip: 'While pause is active, extension shortcuts will not respond.'
+}, {
+  title: 'Modes',
+  tooltip: 'Only one mode can be active at a time. Combining is not possible.'
+}, {
+  title: 'Shortcuts',
+  tooltip: 'You may configure your own keystrokes. Press and hold three desired keys.'
+}]
 
 const options = [
   {
