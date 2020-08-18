@@ -15,6 +15,10 @@
 ![Chrome rating](https://img.shields.io/chrome-web-store/rating/bfbnagnphiehemkdgmmficmjfddgfhpl?color=%238a5fff&label=Chrome%20rating&style=flat-square)
 ![Firefox rating](https://img.shields.io/amo/rating/ultrawideo?color=%238a5fff&label=Firefox%20rating&style=flat-square)
 
+| Statements | Branches | Functions | Lines |
+| --- | --- | --- | --- |
+| ![Statements](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) |
+
 ### Getting started
 
 Select one of the possible options to install this extension, depending on your browser.
@@ -46,7 +50,7 @@ It's for everyone who wants the power over video aspect ratio. This extension is
 <br>
 
 ### How to use it?
-The extension is fairly easy to use but very powerful at what it does. It has a couple of options...
+The extension is fairly easy to use, but very powerful at what it does. It has a couple of options...
 
 - **Pause the extension** - _It will stop listening for all memory consuming events and restore any DOM manipulations.  _
 - **Toggle between modes** - _Toggle between different modes that will affect the video: normal, upscale and stretch. _
@@ -55,23 +59,22 @@ The extension is fairly easy to use but very powerful at what it does. It has a 
 <br>
 
 ### Works everywhere?
-To be honest, it is working on all **globally popular** video streaming platforms. Making a list of all platforms where this extension works would be huge and time consuming, so it's better to build a list of platforms where this extension doesn't work and specify the reason why.
+To be honest, it is working on all **globally popular** video streaming platforms. Making a list of all platforms would be very expensive and time consuming, since many platforms are paid. Although, here's my attempt to do it:
+[Platform List](./PLATFORMS.md)
 
-| Platform | Issue | 
-| --- | --- |
-| [Movistar](https://ver.movistarplus.es/) | [investigation](https://github.com/dvlden/ultrawideo/issues/12#issuecomment-502765621) |
-
+<br>
 
 ### Donations
 I'd like to take a minute and show my gratitude to every single donation that I received. I'll be updating the list accordingly.
 
-- Paul Mertens
-- Shahrul Azlan
-- Jelle Kaufmann
-- Manuel Prussenowsky
-- Christian Kulhei
-- Timothy Park
-- Ariel Bobadilla
-- Ronald Ison
+- Paul Mertens 🍺
+- Shahrul Azlan 🥩
+- Jelle Kaufmann 🍺
+- Manuel Prussenowsky 🍺
+- Christian Kulhei ☕️
+- Timothy Park ☕️
+- Ariel Bobadilla 🍺
+- Ronald Ison ☕️
+- Justin Tisdale 🥩
 
-THANKS! 🙌
+🙌 THANKS A LOT! 🙌
