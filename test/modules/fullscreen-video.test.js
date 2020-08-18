@@ -1,22 +1,5 @@
 import FullscreenVideo from '@/modules/fullscreen-video'
 
-const setHostname = url => {
-  Object.defineProperty(window, 'location', {
-    value: {
-      hostname: url
-    }
-  })
-}
-
-const platforms = {
-  amazon: [
-    'https://www.primevideo.com',
-    'https://smile.amazon.de',
-    'https://www.amazon.com'
-  ],
-  hulu: 'https://www.hulu.com'
-}
-
 describe('tests for fullscreen-video module', () => {
   beforeAll(() => {
     global.instance = new FullscreenVideo
@@ -67,7 +50,17 @@ describe('tests for fullscreen-video module', () => {
       expect(instance.videoElement).toBe(videoElement)
     })
 
-    it('should return first video element if multiple are present', () => {
+    it('should return a blob video element', () => {
+      document.fullscreenElement = wrappedVideoElement
+      document.webkitFullscreenElement = wrappedVideoElement
+
+      videoElement.src = '//video.source'
+      videoElementTwo.src = 'blob://video-2.source'
+
+      expect(instance.videoElement).toBe(videoElementTwo)
+    })
+
+    it('should return video element with any source', () => {
       document.fullscreenElement = wrappedVideoElement
       document.webkitFullscreenElement = wrappedVideoElement
 
@@ -77,24 +70,11 @@ describe('tests for fullscreen-video module', () => {
       expect(instance.videoElement).toBe(videoElement)
     })
 
-    it('should return a video element that has blob source (platform specific)', () => {
-      document.fullscreenElement = wrappedVideoElement
-      document.webkitFullscreenElement = wrappedVideoElement
+    it('should not return anything if it fails to find a video element', () => {
+      document.fullscreenElement = document.documentElement
+      document.webkitFullscreenElement = document.documentElement
 
-      videoElement.src = '//video.source'
-      videoElementTwo.src = 'blob://video-2.source'
-
-      setHostname(platforms.amazon[0])
-      expect(instance.videoElement).toBe(videoElementTwo)
-
-      setHostname(platforms.amazon[1])
-      expect(instance.videoElement).toBe(videoElementTwo)
-
-      setHostname(platforms.amazon[2])
-      expect(instance.videoElement).toBe(videoElementTwo)
-
-      setHostname(platforms.hulu)
-      expect(instance.videoElement).toBe(videoElementTwo)
+      expect(instance.videoElement).toBe(undefined)
     })
   })
 })

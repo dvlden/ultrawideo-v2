@@ -1,5 +1,6 @@
 import browser from 'webextension-polyfill'
 import Storage from '@/helpers/Storage'
+import observe from '@/helpers/observe'
 import { classes } from '@/static/defaults'
 import Shortcut from '@/modules/shortcut'
 import FullscreenVideo from '@/modules/fullscreen-video'
@@ -12,6 +13,7 @@ class Inject extends Storage {
     this.shortcut = new Shortcut
 
     this.whenFullscreenTriggers = this.whenFullscreenTriggers.bind(this)
+    this.observer = new MutationObserver(observe(this))
   }
 
   registerStorageEvent () {
@@ -38,6 +40,15 @@ class Inject extends Storage {
   whenFullscreenTriggers () {
     if (this.fullscreen.isActive) {
       this.fullscreen.cachedElement = this.fullscreen.videoElement
+      this.registerObserver()
+
+      // console.log({
+      //   el: this.fullscreen.element,
+      //   vEl: this.fullscreen.videoElement,
+      //   cEl: this.fullscreen.cachedElement
+      // })
+    } else {
+      this.cancelObserver()
     }
 
     this.toggleDOMChanges()
@@ -67,10 +78,12 @@ class Inject extends Storage {
     }
   }
 
-  toggleDOMChanges () {
+  toggleDOMChanges (ignoreBody = false) {
     if (!this.fullscreen.cachedElement) return
 
-    document.body.classList.toggle(classes.body)
+    if (!ignoreBody) {
+      document.body.classList.toggle(classes.body)
+    }
 
     this.fullscreen.cachedElement.classList.toggle(classes.video)
     this.fullscreen.cachedElement.classList.toggle(classes.modes[this.data.mode])
@@ -82,6 +95,14 @@ class Inject extends Storage {
 
   cancelFullscreenEvent () {
     this.fullscreen.off(this.whenFullscreenTriggers)
+  }
+
+  registerObserver () {
+    this.observer.observe(this.fullscreen.element, { childList: true })
+  }
+
+  cancelObserver () {
+    this.observer.disconnect()
   }
 
   registerShortcutEvent () {

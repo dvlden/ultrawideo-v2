@@ -1,5 +1,5 @@
 const hasBlob = element => (
-  (element.src || element.currentSrc).includes('blob:')
+  (element.src || /* istanbul ignore next */ element.currentSrc).includes('blob:')
 )
 
 export default hasBlob

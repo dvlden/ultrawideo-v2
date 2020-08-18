@@ -7,6 +7,17 @@ class FullscreenVideo extends Fullscreen {
     this._cachedElement = null
   }
 
+  filterWithBlobs (nodes) {
+    return Array.from(nodes).filter(hasBlob)
+  }
+
+  filterWithSources (nodes) {
+    return Array.from(nodes).filter(node => (
+      node.src ||
+      /* istanbul ignore next */ node.currentSrc
+    ))
+  }
+
   set cachedElement (element) {
     this._cachedElement = element
   }
@@ -22,13 +33,20 @@ class FullscreenVideo extends Fullscreen {
       return element
     }
 
-    return Array.from(element.querySelectorAll('video')).filter(element => {
-      if (/(amazon|primevideo|hulu)/.test(window.location.hostname)) {
-        return hasBlob(element)
-      }
+    const elements = element.querySelectorAll('video')
 
-      return (element.src || element.currentSrc)
-    })[0]
+    const blobElements = this.filterWithBlobs(elements)
+    if (blobElements.length) {
+      return blobElements[0]
+    }
+
+    const srcElements = this.filterWithSources(elements)
+    if (srcElements.length) {
+      return srcElements[0]
+    }
+
+    // No video element, die silently...
+    // Something might have requested fullscreen, but it's not the video.
   }
 }
 

@@ -231,6 +231,16 @@ describe('test the inject', () => {
       expect(document.body.classList.contains(defaults.classes.body)).toBe(true)
       expect(instance.fullscreen.cachedElement.classList.contains(defaults.classes.video)).toBe(true)
       expect(instance.fullscreen.cachedElement.classList.contains(defaults.classes.modes[instance.data.mode])).toBe(true)
+
+      document.body.classList.remove(defaults.classes.body)
+    })
+
+    it('should ignore toggling the body class', () => {
+      instance.fullscreen.cachedElement = element
+
+      instance.toggleDOMChanges(true)
+
+      expect(document.body.classList.contains(defaults.classes.body)).toBe(false)
     })
   })
 })
