@@ -1,7 +1,7 @@
 {
   "name": "ultrawideo",
   "description": "The cross-browser extension that manipulates video aspect ratio to fit your entire screen.",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "private": true,
   "author": {
     "name": "Nenad Novaković",
@@ -12,7 +12,9 @@
   "scripts": {
     "dev": "webpack --watch --progress --hide-modules --mode development",
     "build": "webpack --progress --hide-modules --mode production && rimraf dist/scripts/welcome.js",
-    "test": "jest --watchAll --coverage"
+    "test": "jest --coverage",
+    "test:watch": "npm run test -- --watchAll",
+    "badges": "istanbul-badges-readme"
   },
   "homepage": "https://github.com/dvlden/ultrawideo#readme",
   "bugs": "https://github.com/dvlden/ultrawideo/issues",
@@ -40,6 +42,14 @@
   "jest": {
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/src/scripts/$1"
+    },
+    "coverageReporters": [
+      "json-summary"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test && npm run badges && git add README.md"
     }
   },
   "devDependencies": {
@@ -48,7 +58,6 @@
     "autoprefixer": "^9.8.6",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
-    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.1",
     "cssnano": "^4.1.10",
@@ -56,7 +65,9 @@
     "file-loader": "^6.0.0",
     "generate-json-webpack-plugin": "^1.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
     "image-webpack-loader": "^6.0.0",
+    "istanbul-badges-readme": "^1.0.5",
     "jest": "^26.4.0",
     "mini-css-extract-plugin": "^0.10.0",
     "postcss-loader": "^3.0.0",
