@@ -98,7 +98,10 @@ class Inject extends Storage {
   }
 
   registerObserver () {
-    this.observer.observe(this.fullscreen.element, { childList: true })
+    this.observer.observe(this.fullscreen.element, { childList: true, subtree: false })
+    // subtree must be disabled for: Netflix
+    // subtree must be enabled for: Disney+, HBO
+    // no observer needed for: everything that wasn't mentioned
   }
 
   cancelObserver () {
