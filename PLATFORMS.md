@@ -30,3 +30,4 @@ Attempt to manage the list of all platforms where the extension has been thoroug
 | [Twitch](https://www.twitch.tv/) | 🟢 | / |
 | [Disney+](https://www.disneyplus.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
 | [Hulu](https://www.hulu.com/) | 🟢 | / |
+| [ESPN+](https://plus.espn.com/) | 🟢 | / |
