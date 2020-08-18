@@ -29,7 +29,7 @@ describe('tests for storage helper', () => {
   })
 
   describe('test onChange method', () => {
-    it('should trigger an event if any changes occur to storage', async () => {
+    it('should trigger an event if any changes occur to storage', () => {
       const mockCallback = jest.fn()
 
       instance.onChange(mockCallback)
