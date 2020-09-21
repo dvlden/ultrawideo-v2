@@ -76,6 +76,6 @@ I'd like to take a minute and show my gratitude to every single donation that I 
 - Ariel Bobadilla 🍺
 - Ronald Ison ☕️
 - Justin Tisdale 🥩
-– Tiburcio Garcia 🍺
+- Tiburcio Garcia 🍺
 
 🙌 THANKS A LOT! 🙌
