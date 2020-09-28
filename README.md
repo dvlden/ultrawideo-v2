@@ -17,17 +17,18 @@
 
 | Statements | Branches | Functions | Lines |
 | --- | --- | --- | --- |
-| ![Statements](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) | ![Lines](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) |
+| ![Statements](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) |
 
 ### Getting started
 
-Select one of the possible options to install this extension, depending on your browser.
+Select one of the possible options to install this extension, depending on your browser's engine.
 
 1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
 2. [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
-3. ~~[Opera Add-on](https://addons.opera.com/en/extensions/details/ultrawideo/)~~ _(deprecated, as the updates were not approved for over 8 months)_
 
 > **Note for Opera browser users**: They allow installing extensions directly from Chrome store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) in order to do that. I strongly suggest installing the extension this way, because Opera add-ons approval is insanely slow.
+
+> **Note for Microsoft Edge browser users**: At the point of this writing, I am unable to make dev account on Microsoft Edge Store. However, Microsoft Edge allows you to install Chromium based extensions from other stores as well. Visit Chrome Web Store and install this extension from there.
 
 <br>
 
