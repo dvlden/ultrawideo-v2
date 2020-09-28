@@ -12,12 +12,12 @@
 
 ![License](https://img.shields.io/github/license/dvlden/ultrawideo?color=%238a5fff&label=License&style=flat-square)
 ![Version](https://img.shields.io/github/package-json/version/dvlden/ultrawideo?color=%238a5fff&label=Version&style=flat-square)
-![Chrome rating](https://img.shields.io/chrome-web-store/rating/bfbnagnphiehemkdgmmficmjfddgfhpl?color=%238a5fff&label=Chrome%20rating&style=flat-square)
-![Firefox rating](https://img.shields.io/amo/rating/ultrawideo?color=%238a5fff&label=Firefox%20rating&style=flat-square)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/users/bfbnagnphiehemkdgmmficmjfddgfhpl?color=rgb%28138%2C%2095%2C%20255%29&label=Chrome%20Users&style=flat-square)
+![Mozilla Add-on](https://img.shields.io/amo/users/ultrawideo?color=rgb%28138%2C%2095%2C%20255%29&label=Firefox%20Users&style=flat-square)
 
 | Statements | Branches | Functions | Lines |
 | --- | --- | --- | --- |
-| ![Statements](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) |
+| ![Statements](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) | ![Lines](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg?color=%238a5fff&style=flat-square) |
 
 ### Getting started
 
