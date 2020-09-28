@@ -18,12 +18,12 @@
   --container-gutter-x: 2rem;
   --container-gutter-y: 1.5rem;
   --space-between-sections: 2.5rem;
-  
+
   margin: {
     right: auto;
     left: auto;
   }
-  
+
   &-foot {
     font-size: .8rem;
   }
@@ -35,7 +35,7 @@
 
 .intro {
   --main-spacing: 5rem;
-  
+
   text-align: center;
   margin-top: var(--main-spacing);
   margin-bottom: var(--main-spacing);
@@ -60,27 +60,25 @@
 
 .browser-list {
   --main-spacing: 5rem;
-  
+
   list-style: none;
   padding-left: 0;
+  max-width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  margin: {
-    top: var(--main-spacing);
-    bottom: var(--main-spacing);
-  }
-  
+  margin: var(--main-spacing) auto;
+
   &-link {
     transition: opacity .2s ease-in-out;
-    
+
     &:hover {
       filter: contrast(200%);
       opacity: .6;
     }
   }
-  
+
   &-image {
     width: 48px;
     height: 48px;

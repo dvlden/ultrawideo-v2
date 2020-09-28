@@ -100,8 +100,9 @@ class Inject extends Storage {
   registerObserver () {
     this.observer.observe(this.fullscreen.element, { childList: true, subtree: false })
     // subtree must be disabled for: Netflix
-    // subtree must be enabled for: Disney+, HBO
+    // subtree must be enabled for: Disney+, HBO, Udemy
     // no observer needed for: everything that wasn't mentioned
+    // there is target prop in observer, but it can't seem to be used to find video selector :/
   }
 
   cancelObserver () {
