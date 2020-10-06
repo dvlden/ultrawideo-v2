@@ -9,6 +9,9 @@ jest.mock('webextension-polyfill', () => require('sinon-chrome/webextensions'))
 describe('test the background', () => {
   beforeAll(() => {
     browser.runtime.getManifest.returns(manifest)
+    browser.runtime.getPlatformInfo.returns({
+      os: 'mac'
+    })
 
     global.instance = new Background
     instance.data = defaults.settings
@@ -45,7 +48,6 @@ describe('test the background', () => {
       }
 
       instance.registerInstallEvent()
-
       browser.runtime.onInstalled.trigger({ reason: 'install' })
 
       expect(browser.tabs.create.calledWith(args)).toBe(true)
@@ -165,6 +167,18 @@ describe('test the background', () => {
 
       const toggleMode = await instance.checkKeystrokeValidity('9+Meta+Shift')
       expect(defaults.settings).toHaveProperty(toggleMode)
+    })
+  })
+
+  describe('overrideModeOnAndroidPlatform', () => {
+    it('should override mode property in settings if platform is android', async () => {
+      browser.runtime.getPlatformInfo.returns({
+        os: 'android'
+      })
+
+      await instance.overrideModeOnAndroidPlatform()
+
+      expect(defaults.settings.mode).toEqual('normal')
     })
   })
 })
