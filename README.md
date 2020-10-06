@@ -19,6 +19,10 @@
 | --- | --- | --- | --- |
 | ![Statements](https://img.shields.io/badge/Coverage-99.42%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/Coverage-99.4%25-brightgreen.svg) |
 
+&nbsp;  
+
+<a href="https://www.producthunt.com/posts/ultrawideo-2-0?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ultrawideo-2-0" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269645&theme=light" alt="UltraWideo 2.0 - Upscale or stretch any video on web for better experience. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 ### Getting started
 
 Select one of the possible options to install this extension, depending on your browser's engine.
