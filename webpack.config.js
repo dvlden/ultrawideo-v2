@@ -50,18 +50,19 @@ module.exports = (env = {}, argv) => {
             {
               loader: 'postcss-loader',
               options: {
-                ident: 'postcss',
                 sourceMap: !isProduction,
-                plugins: (() => [
-                  require('autoprefixer')(),
-                  ...isProduction ? [
-                    require('cssnano')({
-                      preset: ['default', {
-                        minifySelectors: false
-                      }]
-                    })
-                  ] : []
-                ])
+                postcssOptions: {
+                  plugins: (() => [
+                    require('autoprefixer')(),
+                    ...isProduction ? [
+                      require('cssnano')({
+                        preset: ['default', {
+                          minifySelectors: false
+                        }]
+                      })
+                    ] : []
+                  ])
+                }
               }
             },
             {

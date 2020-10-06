@@ -13,7 +13,7 @@ class Inject extends Storage {
     this.shortcut = new Shortcut
 
     this.whenFullscreenTriggers = this.whenFullscreenTriggers.bind(this)
-    this.observer = new MutationObserver(observe(this))
+    // this.observer = new MutationObserver(observe(this))
   }
 
   registerStorageEvent () {
@@ -40,16 +40,14 @@ class Inject extends Storage {
   whenFullscreenTriggers () {
     if (this.fullscreen.isActive) {
       this.fullscreen.cachedElement = this.fullscreen.videoElement
-      this.registerObserver()
+    }
 
-      // console.log({
-      //   el: this.fullscreen.element,
-      //   vEl: this.fullscreen.videoElement,
-      //   cEl: this.fullscreen.cachedElement
-      // })
+    /*if (this.fullscreen.isActive) {
+      this.fullscreen.cachedElement = this.fullscreen.videoElement
+      this.registerObserver()
     } else {
       this.cancelObserver()
-    }
+    }*/
 
     this.toggleDOMChanges()
   }
@@ -97,7 +95,7 @@ class Inject extends Storage {
     this.fullscreen.off(this.whenFullscreenTriggers)
   }
 
-  registerObserver () {
+  /*registerObserver () {
     this.observer.observe(this.fullscreen.element, { childList: true, subtree: false })
     // subtree must be disabled for: Netflix
     // subtree must be enabled for: Disney+, HBO, Udemy
@@ -107,7 +105,7 @@ class Inject extends Storage {
 
   cancelObserver () {
     this.observer.disconnect()
-  }
+  }*/
 
   registerShortcutEvent () {
     this.shortcut.startRecording()

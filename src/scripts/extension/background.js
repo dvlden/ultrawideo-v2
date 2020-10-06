@@ -11,20 +11,29 @@ class Background extends Storage {
   }
 
   registerInstallEvent () {
-    browser.runtime.onInstalled.addListener(async details => {
-      if (details.reason === 'install') {
-        this.set(defaults.settings)
-
+    browser.runtime.onInstalled.addListener(async ({ reason }) => {
+      if (reason === 'install') {
         browser.tabs.create({
           url: browser.runtime.getURL('welcome.html')
         })
+
+        await this.overrideModeOnAndroidPlatform()
+        this.set(defaults.settings)
       }
 
-      if (details.reason === 'update') {
+      if (reason === 'update') {
         await this.syncData()
         this.icon.toggleCurrent(this.data.pause)
       }
     })
+  }
+
+  async overrideModeOnAndroidPlatform () {
+    const platform = await browser.runtime.getPlatformInfo()
+
+    if (platform.os === 'android') {
+      defaults.settings.mode = 'normal'
+    }
   }
 
   registerStorageEvent () {
