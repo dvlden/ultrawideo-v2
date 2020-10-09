@@ -21,7 +21,7 @@
   Netflix | Prime Video | Disney+ | Hulu | ESPN | <em>+ Many others...</em> 🚀
 </p>
 
-> Here's the the list of all services where UltraWideo has been tested. Feel free to contribute to the list! 🙏 [UltraWideo Tested List](./PLATFORMS.md)
+> Here's the list of all services where this extension passes or fails the tests. Feel free to contribute to the list! 🙏 [UltraWideo Tested List](./PLATFORMS.md)
 
 ---
 
@@ -32,46 +32,46 @@ Select one of the possible options to install this extension, depending on your 
 1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
 2. [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
 
-> **Note for Opera browser users**: They allow installing extensions directly from the Chrome store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) in order to do that. I strongly suggest installing the extension this way, because Opera add-ons' approval is insanely slow.
+> **Note for Opera browser users**: They allow installing extensions directly from the Chrome Web Store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) to do that. I strongly suggest installing the extension this way because Opera add-ons' approval is insanely slow, and I delisted the extension from there.
 
-> **Note for Microsoft Edge browser users**: At the point of this writing, I am unable to make a dev account on Microsoft Edge Store. However, Microsoft Edge allows you to install Chromium-based extensions from other stores as well. Visit the Chrome Web Store and install this extension from there.
+> **Note for Microsoft Edge browser users**: At the point of this writing, I cannot make a dev account on Microsoft Edge Store. However, Microsoft Edge allows you to install Chromium-based extensions from other stores as well. Visit the Chrome Web Store and install this extension from there.
 
 <br>
 
 ### Introduction
-This is the only extension on the market that has two major functionalities that no other extension in this category has. 
+The only extension on the market with two significant functionalities that no other extension in this category possess. 
 
-- Works on all video streaming platforms.
-- Works on all embedded videos.
+- Works on all video streaming platforms. ✅
+- Works on all embedded videos. ✅
 
-It doesn't matter if there are multiple direct or embedded video players on a single page. The extension is smart enough to manipulate the video that you put into a fullscreen, without affecting other video players.
+It doesn't matter if there are multiple direct or embedded video players on a single page. The extension is smart enough to manipulate the video you put into a fullscreen, without affecting other video players.
 
-If you are using multiple browsers on the same or different devices, this extension is cross-browser and will work in all major browsers. It has been tested in _Chrome_, _Firefox_, _Edge_, _Brave_, _Whale_ and _Opera_; without a single issue.
-There are many other browsers out there, that use _Webkit engine_, so the extension will work in those browsers too.
+If you are using multiple browsers on the same or different devices, this extension is cross-browser and will work in all major browsers *(except Safari)*. I tested it in *Chrome*, *Firefox*, *Edge*, *Brave*, *Whale*, and *Opera*; without a single issue.
+Many other browsers use *Webkit engine*, hence this extension will work in those browsers too.
 
 <br>
 
-### Who is it for?
-It's for everyone who wants the power over video aspect ratio. This extension is primarily for UltraWide monitors, but that does not mean it's only good for it. You can manipulate the size of the video that contains horizontal or vertical black bars and let the video fill your entire screen for a better experience.
+### Should you use it?
+It's for everyone who wants power over the video aspect ratio. This extension is primarily for UltraWide monitors, but that does not mean it's only good for it.  You can manipulate the video's size that contains horizontal or vertical black bars and let the video fill your entire screen for a better experience.
 
 <br>
 
 ### How to use it?
-The extension is fairly easy to use, but very powerful at what it does. It has a couple of options...
+The extension is relatively easy to use but very powerful at what it does. It has a couple of options:
 
-- **Pause the extension** - _It will stop listening for all memory consuming events and restore any DOM manipulations.  _
-- **Toggle between modes** - _Toggle between different modes that will affect the video: normal, upscale and stretch. _
-- **Configurable shortcuts** - _Set desired keystroke, with min/max of 3 keys to control pause or mode toggling._
+- **Pause the extension** - *It will stop listening for all memory consuming events and restore any DOM manipulations.  *
+- **Toggle between modes** - *Toggle between different options will affect the video: normal, upscale, and stretch. *
+- **Configurable shortcuts** - *Set desired keystroke, with min/max of 3 keys to control pause or mode toggling.*
 
 <br>
 
 ### Works everywhere?
-To be honest, it is working on all **globally popular** video streaming platforms. Making a list of all platforms would be very expensive and time consuming for me, since many platforms are with subscription access only.
+It is working on all **globally popular** video streaming platforms. Making a list of all platforms would be very expensive and time-consuming since many platforms are subscription based.
 
 <br>
 
 ### Donations
-I'd like to take a minute and show my gratitude to every single donation that I received. I'll be updating the list accordingly.
+I want to take a minute and show my gratitude to every single donation that I received. I'll be updating the list accordingly.
 
 - Paul Mertens 🍺
 - Shahrul Azlan 🥩
@@ -85,9 +85,9 @@ I'd like to take a minute and show my gratitude to every single donation that I 
 - Tiburcio Garcia 🍺
 - Robert Younger ☕️
 
-🙌 THANKS A LOT! 🙌
+🙌 THANKS, A LOT! 🙌
 
----
+<br>
 
 ### Test Coverage
 
