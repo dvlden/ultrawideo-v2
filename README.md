@@ -30,9 +30,9 @@ Select one of the possible options to install this extension, depending on your 
 1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
 2. [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
 
-> **Note for Opera browser users**: They allow installing extensions directly from Chrome store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) in order to do that. I strongly suggest installing the extension this way, because Opera add-ons approval is insanely slow.
+> **Note for Opera browser users**: They allow installing extensions directly from the Chrome store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) in order to do that. I strongly suggest installing the extension this way, because Opera add-ons' approval is insanely slow.
 
-> **Note for Microsoft Edge browser users**: At the point of this writing, I am unable to make dev account on Microsoft Edge Store. However, Microsoft Edge allows you to install Chromium based extensions from other stores as well. Visit Chrome Web Store and install this extension from there.
+> **Note for Microsoft Edge browser users**: At the point of this writing, I am unable to make a dev account on Microsoft Edge Store. However, Microsoft Edge allows you to install Chromium-based extensions from other stores as well. Visit the Chrome Web Store and install this extension from there.
 
 <br>
 
@@ -44,8 +44,8 @@ This is the only extension on the market that has two major functionalities that
 
 It doesn't matter if there are multiple direct or embedded video players on a single page. The extension is smart enough to manipulate the video that you put into a fullscreen, without affecting other video players.
 
-If you are using multiple browsers on the same or different device, this extension is cross-browser and will work in all major browsers. It has been tested in _Chrome_, _Firefox_ and _Opera_; without a single issue.
-There are many other browsers out there, that uses _Webkit engine_, so the extension will work in those browsers too.
+If you are using multiple browsers on the same or different devices, this extension is cross-browser and will work in all major browsers. It has been tested in _Chrome_, _Firefox_, _Edge_, _Brave_, _Whale_ and _Opera_; without a single issue.
+There are many other browsers out there, that use _Webkit engine_, so the extension will work in those browsers too.
 
 <br>
 
