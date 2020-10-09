@@ -5,8 +5,14 @@
 </p>
 
 <p align="center">
-  <i>The cross-browser extension that manipulates video aspect ratio to fit your entire screen.</i>
+  <strong>The cross-browser extension that manipulates video aspect ratio to fit your entire screen.</strong>
 </p>
+
+<p align="center">
+  Netflix | Prime Video | Disney+ | Hulu | + Many others... 🚀
+</p>
+
+> Here's the the list of all services where UltraWideo has been tested. Feel free to contribute to the list! 👉 [UltraWideo Tested List](./PLATFORMS.md)
 
 ---
 
@@ -64,8 +70,7 @@ The extension is fairly easy to use, but very powerful at what it does. It has a
 <br>
 
 ### Works everywhere?
-To be honest, it is working on all **globally popular** video streaming platforms. Making a list of all platforms would be very expensive and time consuming, since many platforms are paid. Although, here's my attempt to do it:
-[Platform List](./PLATFORMS.md)
+To be honest, it is working on all **globally popular** video streaming platforms. Making a list of all platforms would be very expensive and time consuming for me, since many platforms are with subscription access only.
 
 <br>
 
