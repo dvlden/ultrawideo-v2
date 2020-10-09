@@ -1,4 +1,13 @@
 <p align="center">
+  <img src="https://img.shields.io/github/license/dvlden/ultrawideo?color=%238a5fff&label=License&style=flat-square" alt="License" />
+  <img src="https://img.shields.io/github/package-json/version/dvlden/ultrawideo?color=%238a5fff&label=Version&style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/chrome-web-store/users/bfbnagnphiehemkdgmmficmjfddgfhpl?color=rgb%28138%2C%2095%2C%20255%29&label=Chrome%20Users&style=flat-square" alt="Chrome Web Store" />
+  <img src="https://img.shields.io/amo/users/ultrawideo?color=rgb%28138%2C%2095%2C%20255%29&label=Firefox%20Users&style=flat-square" alt="Mozilla Add-on" />
+</p>
+
+<br>
+
+<p align="center">
   <a href="https://github.com/dvlden/ultrawideo">
     <img src=".github/logo.svg" width="300" alt="UltraWideo" />
   </a>
@@ -15,19 +24,6 @@
 > Here's the the list of all services where UltraWideo has been tested. Feel free to contribute to the list! 🙏 [UltraWideo Tested List](./PLATFORMS.md)
 
 ---
-
-![License](https://img.shields.io/github/license/dvlden/ultrawideo?color=%238a5fff&label=License&style=flat-square)
-![Version](https://img.shields.io/github/package-json/version/dvlden/ultrawideo?color=%238a5fff&label=Version&style=flat-square)
-![Chrome Web Store](https://img.shields.io/chrome-web-store/users/bfbnagnphiehemkdgmmficmjfddgfhpl?color=rgb%28138%2C%2095%2C%20255%29&label=Chrome%20Users&style=flat-square)
-![Mozilla Add-on](https://img.shields.io/amo/users/ultrawideo?color=rgb%28138%2C%2095%2C%20255%29&label=Firefox%20Users&style=flat-square)
-
-| Statements | Branches | Functions | Lines |
-| --- | --- | --- | --- |
-| ![Statements](https://img.shields.io/badge/Coverage-99.42%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/Coverage-99.4%25-brightgreen.svg) |
-
-&nbsp;  
-
-<a href="https://www.producthunt.com/posts/ultrawideo-2-0?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ultrawideo-2-0" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269645&theme=light" alt="UltraWideo 2.0 - Upscale or stretch any video on web for better experience. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 ### Getting started
 
@@ -90,3 +86,17 @@ I'd like to take a minute and show my gratitude to every single donation that I 
 - Robert Younger ☕️
 
 🙌 THANKS A LOT! 🙌
+
+---
+
+### Test Coverage
+
+| Statements | Branches | Functions | Lines |
+| --- | --- | --- | --- |
+| ![Statements](https://img.shields.io/badge/Coverage-99.42%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/Coverage-99.4%25-brightgreen.svg) |
+
+<br>
+
+### Featured on Product Hunt
+
+<a href="https://www.producthunt.com/posts/ultrawideo-2-0?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ultrawideo-2-0" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269645&theme=light" alt="UltraWideo 2.0 - Upscale or stretch any video on web for better experience. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
