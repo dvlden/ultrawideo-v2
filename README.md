@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Netflix | Prime Video | Disney+ | Hulu | ESPN | + Many others... 🚀
+  Netflix | Prime Video | Disney+ | Hulu | ESPN | <em>+ Many others...</em> 🚀
 </p>
 
 > Here's the the list of all services where UltraWideo has been tested. Feel free to contribute to the list! 🙏 [UltraWideo Tested List](./PLATFORMS.md)
