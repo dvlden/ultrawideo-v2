@@ -9,5 +9,6 @@ instance.syncData().then(data => {
   if (!data.pause) {
     instance.registerFullscreenEvent()
     instance.registerShortcutEvent()
+    instance.registerGestureEvent()
   }
 })

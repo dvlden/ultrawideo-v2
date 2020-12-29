@@ -3,6 +3,7 @@ import Storage from '@/helpers/Storage'
 import observe from '@/helpers/observe'
 import { classes } from '@/static/defaults'
 import Shortcut from '@/modules/shortcut'
+import Gesture from '@/modules/gesture'
 import FullscreenVideo from '@/modules/fullscreen-video'
 
 class Inject extends Storage {
@@ -11,6 +12,7 @@ class Inject extends Storage {
 
     this.fullscreen = new FullscreenVideo
     this.shortcut = new Shortcut
+    this.gesture = new Gesture
 
     this.whenFullscreenTriggers = this.whenFullscreenTriggers.bind(this)
     // this.observer = new MutationObserver(observe(this))
@@ -29,10 +31,12 @@ class Inject extends Storage {
       if (changes.pause.newValue) {
         this.cancelFullscreenEvent()
         this.cancelShortcutEvent()
+        this.cancelGestureEvent()
       }
       else {
         this.registerFullscreenEvent()
         this.registerShortcutEvent()
+        this.registerGestureEvent()
       }
     }
   }
@@ -115,6 +119,16 @@ class Inject extends Storage {
   cancelShortcutEvent () {
     this.shortcut.stopRecording()
     this.shortcut.off('fulfilled', browser.runtime.sendMessage)
+  }
+
+  registerGestureEvent () {
+    this.gesture.startRecording()
+    this.gesture.on('fulfilled', browser.runtime.sendMessage)
+  }
+
+  cancelGestureEvent () {
+    this.gesture.stopRecording()
+    this.gesture.off('fulfilled', browser.runtime.sendMessage)
   }
 }
 
