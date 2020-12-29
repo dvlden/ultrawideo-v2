@@ -123,7 +123,7 @@ describe('test the background', () => {
       await instance.onMessageRequest(defaults.settings.toggle_mode)
 
       const args = {
-        mode: defaults.modesKeys[instance.modeId]
+        mode: defaults.modesKeys[instance.nextModeId]
       }
 
       expect(browser.storage.local.set.called).toBe(true)
@@ -145,12 +145,12 @@ describe('test the background', () => {
 
   describe('test the modeId', () => {
     it('should return the index of the next mode' , () => {
-      expect(instance.modeId).toBe(2)
+      expect(instance.nextModeId).toBe(2)
     })
 
     it('should return zero if there are no more modes' , () => {
       defaults.modesKeys.pop()
-      expect(instance.modeId).toBe(0)
+      expect(instance.nextModeId).toBe(0)
     })
   })
 
