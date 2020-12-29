@@ -53,16 +53,25 @@ class Background extends Storage {
   }
 
   async onMessageRequest (message) {
-    const keystroke = this.checkKeystrokeValidity(message)
+    // Check for gestures
+    if (message === 'zoomin') {
+      this.set({ mode: defaults.modesKeys[this.nextModeId] })
+    } else if (message === 'zoomout') {
+      this.set({ mode: defaults.modesKeys[this.previousModeId] })
+    } else {
 
-    if (!keystroke) return false
+      // Check for keyboard events
+      const keystroke = this.checkKeystrokeValidity(message)
 
-    if (keystroke === 'toggle_pause') {
-      this.set({ pause: !this.data.pause })
-    }
+      if (!keystroke) return false
 
-    if (keystroke === 'toggle_mode') {
-      this.set({ mode: defaults.modesKeys[this.modeId] })
+      if (keystroke === 'toggle_pause') {
+        this.set({ pause: !this.data.pause })
+      }
+
+      if (keystroke === 'toggle_mode') {
+        this.set({ mode: defaults.modesKeys[this.nextModeId] })
+      }
     }
 
     return true
@@ -76,7 +85,7 @@ class Background extends Storage {
     return defaults.modesKeys.length - 1
   }
 
-  get modeId () {
+  get nextModeId () {
     let index = this.currentModeId
 
     return (index >= this.modesLength)
@@ -84,7 +93,15 @@ class Background extends Storage {
       : index + 1
   }
 
-  checkKeystrokeValidity (message) {
+  get previousModeId () {
+    let index = this.currentModeId
+
+    return (index === 0)
+      ? 0 // Do not go into stretched mode by zooming out from normal mode
+      : index - 1
+  }
+
+  checkKeystrokeValidity(message) {
     return defaults.settingsKeys
       .filter(key => key.includes('toggle'))
       .find(key => this.data[key] === message)
