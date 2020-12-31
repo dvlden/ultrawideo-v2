@@ -108,6 +108,16 @@ describe('test the background', () => {
       expect(response).toBe(true)
     })
 
+    it('should return true, if keystroke is zoomin', async () => {
+      const response = await instance.onMessageRequest('zoomin')
+      expect(response).toBe(true)
+    })
+
+    it('should return true, if keystroke is zoomout', async () => {
+      const response = await instance.onMessageRequest('zoomout')
+      expect(response).toBe(true)
+    })
+
     it('should set new value to storage for pause if keystroke is toggle_pause', async () => {
       await instance.onMessageRequest(defaults.settings.toggle_pause)
 
@@ -121,6 +131,28 @@ describe('test the background', () => {
 
     it('should set new value to storage for mode if keystroke is toggle_mode', async () => {
       await instance.onMessageRequest(defaults.settings.toggle_mode)
+
+      const args = {
+        mode: defaults.modesKeys[instance.nextModeId]
+      }
+
+      expect(browser.storage.local.set.called).toBe(true)
+      expect(browser.storage.local.set.calledWith(args)).toBe(true)
+    })
+
+    it('should set new value to storage for mode if keystroke is zoomin', async () => {
+      await instance.onMessageRequest('zoomin')
+
+      const args = {
+        mode: defaults.modesKeys[instance.nextModeId]
+      }
+
+      expect(browser.storage.local.set.called).toBe(true)
+      expect(browser.storage.local.set.calledWith(args)).toBe(true)
+    })
+
+    it('should set new value to storage for mode if keystroke is zoomout', async () => {
+      await instance.onMessageRequest('zoomout')
 
       const args = {
         mode: defaults.modesKeys[instance.nextModeId]
