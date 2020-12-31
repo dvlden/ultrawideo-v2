@@ -44,12 +44,16 @@ class Gesture extends EventEmitter {
 
 
   pointerDownHandler (ev) {
+    if (ev.defaultPrevented || ev.repeat) return
+
     // The pointerdown event signals the start of a touch interaction.
     // This event is cached to support 2-finger gestures
     this.evCache.push(ev)
   }
 
   pointerMoveHandler (ev) {
+    if (ev.defaultPrevented || ev.repeat) return
+
     // This function implements a 2-pointer horizontal pinch/zoom gesture. 
     //
     // If the distance between the two pointers has increased -> zoom in, 
