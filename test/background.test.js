@@ -154,6 +154,16 @@ describe('test the background', () => {
     })
   })
 
+  describe('test the previousModeId', () => {
+    it('should return the index of the previous mode' , () => {
+      expect(instance.previousModeId).toBe(0)
+    })
+
+    it('should return zero if there are no more modes' , () => {
+      expect(instance.previousModeId).toBe(0)
+    })
+  })
+
   describe('test the checkKeystrokeValidity', () => {
     it('should return undefined if given value is not valid', async () => {
       const check = await instance.checkKeystrokeValidity('N+O+P+E')
