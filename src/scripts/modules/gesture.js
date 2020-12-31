@@ -33,7 +33,7 @@ class Gesture extends EventEmitter {
   }
 
   stopRecording () {
-    this.element.removeEventListener('pointerdown', this.onPointerDownr, true)
+    this.element.removeEventListener('pointerdown', this.onPointerDown, true)
     this.element.removeEventListener('pointermove', this.onPointerMove, true)
 
     this.element.removeEventListener('pointerup', this.onPointerUp, true)
