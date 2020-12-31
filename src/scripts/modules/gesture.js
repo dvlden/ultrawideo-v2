@@ -14,42 +14,42 @@ class Gesture extends EventEmitter {
     this.prevDiff = -1
     this.trigger = true
 
-    this.onpointerdown = this.pointerdown_handler.bind(this)
-    this.onpointermove = this.pointermove_handler.bind(this)
-    this.onpointerup = this.pointerup_handler.bind(this)
+    this.onPointerDown = this.pointerDownHandler.bind(this)
+    this.onPointerMove = this.pointerMoveHandler.bind(this)
+    this.onPointerUp = this.pointerUpHandler.bind(this)
   }
 
   startRecording () {
     // Install event handlers for the pointer target
-    this.element.addEventListener('pointerdown', this.onpointerdown, true)
-    this.element.addEventListener('pointermove', this.onpointermove, true)
+    this.element.addEventListener('pointerdown', this.onPointerDown, true)
+    this.element.addEventListener('pointermove', this.onPointerMove, true)
 
     // Use same handler for pointer{up,cancel,out,leave} events since
     // the semantics for these events - in this app - are the same.
-    this.element.addEventListener('pointerup', this.onpointerup, true)
-    this.element.addEventListener('pointercancel', this.onpointerup, true)
-    this.element.addEventListener('pointerout', this.onpointerup, true)
-    this.element.addEventListener('pointerleave', this.onpointerup, true)
+    this.element.addEventListener('pointerup', this.onPointerUp, true)
+    this.element.addEventListener('pointercancel', this.onPointerUp, true)
+    this.element.addEventListener('pointerout', this.onPointerUp, true)
+    this.element.addEventListener('pointerleave', this.onPointerUp, true)
   }
 
   stopRecording () {
-    this.element.removeEventListener('pointerdown', this.onpointerdownr, true)
-    this.element.removeEventListener('pointermove', this.onpointermove, true)
+    this.element.removeEventListener('pointerdown', this.onPointerDownr, true)
+    this.element.removeEventListener('pointermove', this.onPointerMove, true)
 
-    this.element.removeEventListener('pointerup', this.onpointerup, true)
-    this.element.removeEventListener('pointercancel', this.onpointerup, true)
-    this.element.removeEventListener('pointerout', this.onpointerup, true)
-    this.element.removeEventListener('pointerleave', this.onpointerup, true)
+    this.element.removeEventListener('pointerup', this.onPointerUp, true)
+    this.element.removeEventListener('pointercancel', this.onPointerUp, true)
+    this.element.removeEventListener('pointerout', this.onPointerUp, true)
+    this.element.removeEventListener('pointerleave', this.onPointerUp, true)
   }
 
 
-  pointerdown_handler (ev) {
+  pointerDownHandler (ev) {
     // The pointerdown event signals the start of a touch interaction.
     // This event is cached to support 2-finger gestures
     this.evCache.push(ev)
   }
 
-  pointermove_handler (ev) {
+  pointerMoveHandler (ev) {
     // This function implements a 2-pointer horizontal pinch/zoom gesture. 
     //
     // If the distance between the two pointers has increased -> zoom in, 
@@ -91,9 +91,9 @@ class Gesture extends EventEmitter {
     }
   }
 
-  pointerup_handler (ev) {
+  pointerUpHandler (ev) {
     // Remove this pointer from the cache
-    this.remove_event(ev)
+    this.removeEvent(ev)
 
     // If the number of pointers down is less than two then reset diff
     // and reenable triggering
@@ -103,7 +103,7 @@ class Gesture extends EventEmitter {
     }
   }
 
-  remove_event (ev) {
+  removeEvent (ev) {
     // Remove this event from the target's cache
     for (var i = 0; i < this.evCache.length; i++) {
       if (this.evCache[i].pointerId == ev.pointerId) {
