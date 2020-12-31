@@ -143,7 +143,7 @@ describe('test the background', () => {
     })
   })
 
-  describe('test the modeId', () => {
+  describe('test the nextModeId', () => {
     it('should return the index of the next mode' , () => {
       expect(instance.nextModeId).toBe(2)
     })
