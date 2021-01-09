@@ -1,10 +1,11 @@
 const manifest = require('./src/manifest')
 const path = require('path')
 const plugins = {
-  extractCSS: require('mini-css-extract-plugin'),
-  makeJSON: require('generate-json-webpack-plugin'),
+  clean: require('clean-webpack-plugin').CleanWebpackPlugin,
   copy: require('copy-webpack-plugin'),
+  extractCSS: require('mini-css-extract-plugin'),
   html: require('html-webpack-plugin'),
+  makeJSON: require('generate-json-webpack-plugin'),
   zip: require('zip-webpack-plugin')
 }
 
@@ -31,7 +32,7 @@ module.exports = (env = {}, argv) => {
 
     output: {
       path: path.resolve(__dirname, 'dist'),
-      // publicPath: '',
+      publicPath: '',
       filename: 'scripts/[name].js'
     },
 
@@ -50,19 +51,7 @@ module.exports = (env = {}, argv) => {
             {
               loader: 'postcss-loader',
               options: {
-                sourceMap: !isProduction,
-                postcssOptions: {
-                  plugins: (() => [
-                    require('autoprefixer')(),
-                    ...isProduction ? [
-                      require('cssnano')({
-                        preset: ['default', {
-                          minifySelectors: false
-                        }]
-                      })
-                    ] : []
-                  ])
-                }
+                sourceMap: !isProduction
               }
             },
             {
@@ -95,7 +84,7 @@ module.exports = (env = {}, argv) => {
               loader: 'file-loader',
               options: {
                 name: '[path][name].[ext]',
-                publicPath: '..'
+                // publicPath: '..'
               }
             },
             {
@@ -169,6 +158,7 @@ module.exports = (env = {}, argv) => {
       ]
 
       let production = [
+        new plugins.clean(),
         new plugins.zip({
           path: path.resolve(__dirname),
           filename: 'build.zip'
@@ -180,7 +170,7 @@ module.exports = (env = {}, argv) => {
 
     devtool: (() => {
       return isProduction
-        ? ''
+        ? false
         : 'source-map'
     })(),
 
