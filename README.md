@@ -31,10 +31,11 @@ Select one of the possible options to install this extension, depending on your 
 
 1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
 2. [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
+3. [Microsft Edge Add-on](https://microsoftedge.microsoft.com/addons/detail/ultrawideo/nljggnfdanlckapcflfnhnckjbonppjh)
 
 > **Note for Opera browser users**: They allow installing extensions directly from the Chrome Web Store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) to do that. I strongly suggest installing the extension this way because Opera add-ons' approval is insanely slow, and I delisted the extension from there.
 
-> **Note for Microsoft Edge browser users**: At the point of this writing, I cannot make a dev account on Microsoft Edge Store. However, Microsoft Edge allows you to install Chromium-based extensions from other stores as well. Visit the Chrome Web Store and install this extension from there.
+> **Note for Microsoft Edge browser users**: You may download the extension from official Microsoft Edge addons store, but they also allow you to install Chromium-based extensions from other stores as well. Visit the Chrome Web Store and install this extension from there.
 
 <br>
 
