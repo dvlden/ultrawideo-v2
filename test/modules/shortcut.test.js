@@ -52,17 +52,6 @@ describe('tests for shortcut module', () => {
       expect(instance.lastKey).toBe(null)
     })
 
-    it('should remove lastKey from the keys if there are more keystrokes than the limit allows', () => {
-      instance.keys = ['0', 'Meta', 'Shift']
-      instance.lastKey = '0'
-
-      instance.onKeyPress(
-        new KeyboardEvent('keydown', { key: '3' })
-      )
-
-      expect(instance.keys.length).toBe(instance.limit)
-    })
-
     it('should add a key from event to the keys array', () => {
       instance.onKeyPress(
         new KeyboardEvent('keydown', { key: '3' })
@@ -81,8 +70,9 @@ describe('tests for shortcut module', () => {
       expect(instance.keys).toEqual(['3', 'Alt', 'Shift'])
     })
 
-    it('should set the lastKey to equal the last key from event', () => {
-      instance.lastKey = '0'
+    it('should set the lastKey to equal the last key pressed after fulfillment', () => {
+      instance.keys = ['Control', 'Shift']
+      instance.lastKey = null
 
       instance.onKeyPress(
         new KeyboardEvent('keydown', { key: '3' })
@@ -94,22 +84,32 @@ describe('tests for shortcut module', () => {
     it('should emit the fulfilled event and return combined keystroke', () => {
       jest.spyOn(instance, 'emit')
 
-      instance.keys = ['0', 'Meta']
+      instance.keys = ['0', 'Control']
 
       instance.onKeyPress(
         new KeyboardEvent('keydown', { key: 'Shift' })
       )
 
-      expect(instance.emit.mock.calls[0]).toContain('0+Meta+Shift')
+      expect(instance.emit.mock.calls[0]).toContain('0+Control+Shift')
     })
   })
 
   describe('test onKeyRelease method', () => {
-    it('should reset array of keys and lastKey', () => {
-      instance.keys = ['0', 'Meta', 'Shift']
+    it('should restore keystrokes to initial empty state', () => {
+      instance.keys = ['0', 'Control', 'Shift']
       instance.lastKey = '0'
 
-      instance.onKeyRelease()
+      instance.onKeyRelease(
+        new KeyboardEvent('keyup', { key: 'Control' })
+      )
+
+      instance.onKeyRelease(
+        new KeyboardEvent('keyup', { key: 'Shift' })
+      )
+
+      instance.onKeyRelease(
+        new KeyboardEvent('keyup', { key: '0' })
+      )
 
       expect(instance.keys).toHaveLength(0)
       expect(instance.lastKey).toBe(null)
@@ -130,7 +130,7 @@ describe('tests for shortcut module', () => {
 
     it('should trigger onKeyDown when event is emitted', () => {
       instance.element.dispatchEvent(
-        new KeyboardEvent('keydown')
+        new KeyboardEvent('keydown', { key: 'a' })
       )
 
       expect(instance.onKeyDown).toHaveBeenCalledTimes(1)
@@ -138,7 +138,7 @@ describe('tests for shortcut module', () => {
 
     it('should trigger onKeyUp when event is emitted', () => {
       instance.element.dispatchEvent(
-        new KeyboardEvent('keyup')
+        new KeyboardEvent('keyup', { key: 'a' })
       )
 
       expect(instance.onKeyUp).toHaveBeenCalledTimes(1)

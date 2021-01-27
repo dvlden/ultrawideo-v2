@@ -14,25 +14,37 @@ class Shortcut extends EventEmitter {
   }
 
   onKeyPress (e) {
-    if (e.defaultPrevented || e.repeat) return
+    /*
+      Developer Note:
+      META key is problematic (at least on macOS)
+      While being held down with or without other modifier keys, it wont register a key-release of any key
 
-    if (this.keys.length >= this.limit) {
-      this.keys.splice(this.keys.indexOf(this.lastKey), 1)
+      Example...
+      Combo: Meta + Shift + K
+      Let go of: K
+      Key release (keyup), won't register K as released, not even when you let go the modifier keys
+    */
+
+    if (e.defaultPrevented || e.repeat || e.metaKey) return
+
+    if (!this.keys.includes(e.key)) {
+      this.keys.push(e.key)
     }
 
-    this.keys.push(e.key)
     this.keys.sort()
 
-    this.lastKey = e.key
-
     if (this.keys.length === this.limit) {
+      this.lastKey = e.key
       this.emit('fulfilled', this.keys.join('+'))
     }
   }
 
-  onKeyRelease () {
-    this.keys = []
-    this.lastKey = null
+  onKeyRelease (e) {
+    this.keys.splice(this.keys.indexOf(e.key), 1)
+
+    if (this.lastKey === e.key) {
+      this.lastKey = null
+    }
   }
 
   startRecording () {
@@ -41,7 +53,9 @@ class Shortcut extends EventEmitter {
   }
 
   stopRecording () {
-    this.onKeyRelease()
+    this.keys = []
+    this.lastKey = null
+
     this.element.removeEventListener('keydown', this.onKeyDown, true)
     this.element.removeEventListener('keyup', this.onKeyUp, true)
   }

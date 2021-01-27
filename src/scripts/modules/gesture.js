@@ -1,10 +1,9 @@
 // Based on
 // https://github.com/mdn/dom-examples/blob/bdade19d93216597e104b02b819443a428b2dffa/pointerevents/Pinch_zoom_gestures.html
-
 import EventEmitter from 'eventemitter3'
 
 class Gesture extends EventEmitter {
-  constructor (element = document) {
+  constructor(element = document) {
     super()
 
     this.element = element
@@ -19,7 +18,7 @@ class Gesture extends EventEmitter {
     this.onPointerUp = this.pointerUpHandler.bind(this)
   }
 
-  startRecording () {
+  startRecording() {
     // Install event handlers for the pointer target
     this.element.addEventListener('pointerdown', this.onPointerDown, true)
     this.element.addEventListener('pointermove', this.onPointerMove, true)
@@ -32,7 +31,7 @@ class Gesture extends EventEmitter {
     this.element.addEventListener('pointerleave', this.onPointerUp, true)
   }
 
-  stopRecording () {
+  stopRecording() {
     this.element.removeEventListener('pointerdown', this.onPointerDown, true)
     this.element.removeEventListener('pointermove', this.onPointerMove, true)
 
@@ -42,8 +41,7 @@ class Gesture extends EventEmitter {
     this.element.removeEventListener('pointerleave', this.onPointerUp, true)
   }
 
-
-  pointerDownHandler (ev) {
+  pointerDownHandler(ev) {
     if (ev.defaultPrevented || ev.repeat) return
 
     // The pointerdown event signals the start of a touch interaction.
@@ -51,12 +49,12 @@ class Gesture extends EventEmitter {
     this.evCache.push(ev)
   }
 
-  pointerMoveHandler (ev) {
+  pointerMoveHandler(ev) {
     if (ev.defaultPrevented || ev.repeat) return
 
-    // This function implements a 2-pointer horizontal pinch/zoom gesture. 
+    // This function implements a 2-pointer horizontal pinch/zoom gesture.
     //
-    // If the distance between the two pointers has increased -> zoom in, 
+    // If the distance between the two pointers has increased -> zoom in,
     // if the distance is decreasing -> zoom out
 
     // Find this event in the cache and update its record with this event
@@ -90,12 +88,12 @@ class Gesture extends EventEmitter {
           this.trigger = false
       }
 
-      // Cache the distance for the next move event 
+      // Cache the distance for the next move event
       this.prevDiff = curDiff
     }
   }
 
-  pointerUpHandler (ev) {
+  pointerUpHandler(ev) {
     // Remove this pointer from the cache
     this.removeEvent(ev)
 
@@ -107,7 +105,7 @@ class Gesture extends EventEmitter {
     }
   }
 
-  removeEvent (ev) {
+  removeEvent(ev) {
     // Remove this event from the target's cache
     for (var i = 0; i < this.evCache.length; i++) {
       if (this.evCache[i].pointerId == ev.pointerId) {
@@ -116,7 +114,6 @@ class Gesture extends EventEmitter {
       }
     }
   }
-
 }
 
 export default Gesture

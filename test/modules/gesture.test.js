@@ -41,6 +41,22 @@ describe('tests for gesture module', () => {
     expect(mockInstance).toHaveBeenCalledWith(document.body)
   })
 
+  it('should not execute if event is prevented', () => {
+    jest.spyOn(instance, 'pointerMoveHandler')
+
+    document.addEventListener('pointerdown', (e) => {
+      e.preventDefault()
+      instance.pointerMoveHandler(e)
+    })
+
+    document.dispatchEvent(
+      new PointerEvent('pointerdown')
+    )
+
+    expect(instance.pointerMoveHandler).toHaveReturnedWith(undefined)
+    expect(instance.evCache).toHaveLength(0)
+  })
+
   describe('test startRecording method', () => {
     beforeEach(() => {
       jest.spyOn(instance, 'onPointerDown')
@@ -109,7 +125,7 @@ describe('tests for gesture module', () => {
     })
 
     it('should remove an event from evCache array', () => {
-      
+
       var ev = new PointerEvent('pointerdown', {pointerId: 2})
 
       instance.evCache = [
@@ -127,7 +143,7 @@ describe('tests for gesture module', () => {
     beforeAll(() => {
       global.instance = new Gesture(document)
     })
-  
+
     afterAll(() => {
       delete global.instance
     })

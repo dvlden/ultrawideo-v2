@@ -54,6 +54,11 @@ const browsers = [
     name: 'Firefox',
     icon: require('../images/brand-icons/firefox.svg').default,
     link: 'https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/'
+  },
+  {
+    name: 'Edge',
+    icon: require('../images/brand-icons/edge.svg').default,
+    link: 'https://microsoftedge.microsoft.com/addons/detail/ultrawideo/nljggnfdanlckapcflfnhnckjbonppjh'
   }
 ]
 

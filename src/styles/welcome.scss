@@ -31,6 +31,23 @@
 
 .category {
   --section-spacing: 3rem;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  kbd {
+    background-color: hsla(var(--color-primary), 1);
+    font-size: var(--font-size-xs);
+    color: hsla(var(--color-white), 1);
+    padding: var(--spacing-xs) var(--spacing-s);
+    min-width: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: var(--base-radius);
+  }
 }
 
 .intro {

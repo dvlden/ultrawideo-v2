@@ -197,17 +197,16 @@ describe('test the background', () => {
   })
 
   describe('test the checkKeystrokeValidity', () => {
-    it('should return undefined if given value is not valid', async () => {
-      const check = await instance.checkKeystrokeValidity('N+O+P+E')
-
-      expect(check).toBe(undefined)
+    it('should return undefined if given value is not valid', () => {
+      const check = instance.checkKeystrokeValidity('N+O+P+E')
+      expect(check).toBeUndefined()
     })
 
-    it('should return key by value of given shortcut', async () => {
-      const togglePause = await instance.checkKeystrokeValidity('0+Meta+Shift')
+    it('should return key by value of given shortcut', () => {
+      const togglePause = instance.checkKeystrokeValidity('0+Control+Shift')
       expect(defaults.settings).toHaveProperty(togglePause)
 
-      const toggleMode = await instance.checkKeystrokeValidity('9+Meta+Shift')
+      const toggleMode = instance.checkKeystrokeValidity('9+Control+Shift')
       expect(defaults.settings).toHaveProperty(toggleMode)
     })
   })
