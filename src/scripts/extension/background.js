@@ -52,15 +52,12 @@ class Background extends Storage {
     browser.runtime.onMessage.addListener(this.onMessageRequest.bind(this))
   }
 
-  async onMessageRequest (message) {
-    // Check for gestures
+  onMessageRequest (message) {
     if (message === 'zoomin') {
       this.set({ mode: defaults.modesKeys[this.nextModeId] })
     } else if (message === 'zoomout') {
       this.set({ mode: defaults.modesKeys[this.previousModeId] })
     } else {
-
-      // Check for keyboard events
       const keystroke = this.checkKeystrokeValidity(message)
 
       if (!keystroke) return false
@@ -97,7 +94,7 @@ class Background extends Storage {
     let index = this.currentModeId
 
     return (index === 0)
-      ? 0 // Do not go into stretched mode by zooming out from normal mode
+      ? 0 // Do not go into stretch mode by zooming out from normal mode
       : index - 1
   }
 
