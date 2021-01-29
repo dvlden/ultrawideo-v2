@@ -203,10 +203,10 @@ describe('test the background', () => {
     })
 
     it('should return key by value of given shortcut', () => {
-      const togglePause = instance.checkKeystrokeValidity('0+Control+Shift')
+      const togglePause = instance.checkKeystrokeValidity(defaults.settings.toggle_pause)
       expect(defaults.settings).toHaveProperty(togglePause)
 
-      const toggleMode = instance.checkKeystrokeValidity('9+Control+Shift')
+      const toggleMode = instance.checkKeystrokeValidity(defaults.settings.toggle_mode)
       expect(defaults.settings).toHaveProperty(toggleMode)
     })
   })

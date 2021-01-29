@@ -1,8 +1,8 @@
 const settings = {
   pause: false,
   mode: 'upscale',
-  toggle_pause: '0+Control+Shift',
-  toggle_mode: '9+Control+Shift'
+  toggle_pause: 'Control+Shift+X',
+  toggle_mode: 'Control+Shift+Z'
 }
 
 const classes = {
