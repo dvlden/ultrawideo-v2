@@ -97,7 +97,7 @@ I want to take a minute and show my gratitude to every single donation that I re
 
 | Statements | Branches | Functions | Lines |
 | --- | --- | --- | --- |
-| ![Statements](https://img.shields.io/badge/Coverage-99.42%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/Coverage-99.4%25-brightgreen.svg) |
+| ![Statements](https://img.shields.io/badge/Coverage-99.57%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/Coverage-96.3%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg) |
 
 <br>
 
