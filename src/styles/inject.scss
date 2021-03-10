@@ -11,6 +11,15 @@
       width: 100vw !important;  // Required for "normal" mode restoration
       height: 100vh !important; // Required for "normal" mode restoration
     }
+
+    // Fix for Channel24
+    .full_screen .player__video {
+      &__app,
+      &__container {
+        width: 100vw !important;
+        height: 100vh !important;
+      }
+    }
   }
 
   &-active &-video { // :not(&-normal)
