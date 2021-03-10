@@ -14,7 +14,8 @@
     "build": "webpack --mode production && rimraf dist/scripts/welcome.js",
     "test": "jest --coverage",
     "test:watch": "npm run test -- --watchAll",
-    "badges": "istanbul-badges-readme"
+    "badges": "istanbul-badges-readme",
+    "prepare": "husky install"
   },
   "homepage": "https://github.com/dvlden/ultrawideo#readme",
   "bugs": "https://github.com/dvlden/ultrawideo/issues",
@@ -46,11 +47,6 @@
     "coverageReporters": [
       "json-summary"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run test && npm run badges && git add README.md"
-    }
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
