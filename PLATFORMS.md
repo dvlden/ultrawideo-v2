@@ -33,3 +33,5 @@ Attempt to manage the list of all platforms where the extension has been thoroug
 | [ESPN+](https://plus.espn.com/) | 🟢 | / |
 | [CrunchyRoll](https://www.crunchyroll.com) | 🟢 | / |
 | [Channel4](https://www.channel4.com) | 🟢 | / |
+| [Udemy](https://www.udemy.com) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
+| [Kadenze](https://www.kadenze.com/) | 🟢 | / |
