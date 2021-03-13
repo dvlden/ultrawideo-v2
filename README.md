@@ -71,6 +71,15 @@ It is working on all **globally popular** video streaming platforms. Making a li
 
 <br>
 
+### Where it really shines?
+Just for a reference, if you come across any videos like the one below, it will be the best watching experience on ultrawide screens. On my screen 3440x1440, using **upscale** mode, it doesn't crop a single pixel of video content. **It's just made to be.**
+
+[Kevin James - Short Film](https://www.youtube.com/watch?v=tdSQkoryv3Q)
+
+
+
+<br>
+
 ### Donations
 I want to take a minute and show my gratitude to every single donation that I received. I'll be updating the list accordingly.
 
