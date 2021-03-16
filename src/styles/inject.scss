@@ -28,9 +28,10 @@
     right: 0 !important;
     left: 0 !important;
     bottom: 0 !important;
-    transform: none !important; // Fix for Hulu
+    // transform: none !important; // Fix for Hulu
     width: 100vw !important;
     height: 100vh !important;
+    transform: scale(1.001) !important;
   }
 
   &-active &-upscale {
