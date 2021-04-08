@@ -100,6 +100,7 @@ I want to take a minute and show my gratitude to every single donation that I re
 - Benjamin Houix 🍺
 - René Kielder 🍺
 - Josiah Dines 🥩 🍺
+- Roland Jacques 🥩
 
 🙌 THANKS, A LOT! 🙌
 
