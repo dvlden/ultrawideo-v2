@@ -10,31 +10,30 @@ Attempt to manage the list of all platforms where the extension has been thoroug
 
 | PLATFORM | STATUS | ISSUE _(if any)_ |
 | :---: | :---: | :--- |
-| [iTV Hub Plus](https://www.itv.com/) | 🟢 | / |
-| [Netflix](https://www.netflix.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
-| [YouTube](https://www.youtube.com/) | 🟢 | / |
-| [HBO GO](https://play.hbogo.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
-| [IMDB TV](https://www.imdb.com/tv/) | 🟢 | / |
+| [Channel4](https://www.channel4.com) | 🟢 | / |
 | [Crackle](https://www.crackle.com/) | 🟢 | / |
+| [CrunchyRoll](https://www.crunchyroll.com) | 🟢 | / |
+| [DailyMotion](https://www.dailymotion.com/) | 🟢 | / |
+| [Disney+](https://www.disneyplus.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
+| [ESPN+](https://plus.espn.com/) | 🟢 | / |
+| [Facebook Videos](https://www.facebook.com/watch) | 🟢 | / |
+| [HBO GO](https://play.hbogo.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
+| [HBO Max](https://www.hbomax.com/) | 🟢 | / |
+| [Hulu](https://www.hulu.com/) | 🟢 | / |
+| [IMDB TV](https://www.imdb.com/tv/) | 🟢 | / |
+| [iTV Hub Plus](https://www.itv.com/) | 🟢 | / |
+| [Kadenze](https://www.kadenze.com/) | 🟢 | / |
+| [MetaCafe](https://www.metacafe.com/) | 🟢 | / |
 | [Movistar Plus](https://ver.movistarplus.es/) | 🔴 | [investigation](https://github.com/dvlden/ultrawideo/issues/12#issuecomment-502765621) |
-| [Vudu](https://www.vudu.com/) | 🔴 | [investigation](https://github.com/dvlden/ultrawideo/issues/19#issuecomment-524646724)
-| [TubiTV](https://tubitv.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
+| [Mubi](https://mubi.com/) | 🟢 | / |
+| [NBC](https://www.nbc.com/) | 🟢 | / |
+| [Netflix](https://www.netflix.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
 | [PlexTV](https://www.plex.tv/) | 🔴 | [investigation](https://github.com/dvlden/ultrawideo/issues/10) |
 | [PlutoTV](https://pluto.tv/) | 🟢 | / |
-| [NBC](https://www.nbc.com/) | 🟢 | / |
-| [DailyMotion](https://www.dailymotion.com/) | 🟢 | / |
-| [Vimeo](https://vimeo.com/) | 🟢 | / |
-| [MetaCafe](https://www.metacafe.com/) | 🟢 | / |
-| [Facebook Videos](https://www.facebook.com/watch) | 🟢 | / |
-| [Twitter Videos](https://twitter.com/twittervideo) | 🟢 | / |
+| [TubiTV](https://tubitv.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
 | [Twitch](https://www.twitch.tv/) | 🟢 | / |
-| [Disney+](https://www.disneyplus.com/) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
-| [Hulu](https://www.hulu.com/) | 🟢 | / |
-| [ESPN+](https://plus.espn.com/) | 🟢 | / |
-| [CrunchyRoll](https://www.crunchyroll.com) | 🟢 | / |
-| [Channel4](https://www.channel4.com) | 🟢 | / |
+| [Twitter Videos](https://twitter.com/twittervideo) | 🟢 | / |
 | [Udemy](https://www.udemy.com) | 🟡 | While in full-screen, changing episode removes the extension changes. Manually going `out/in` of full-screen solves the problem. |
-| [Kadenze](https://www.kadenze.com/) | 🟢 | / |
-| [HBO Max](https://www.hbomax.com/) | 🟢 | / |
-| [Mubi](https://mubi.com/) | 🟢 | / |
-| [Mubi](https://mubi.com/) | 🟢 | / |
+| [Vimeo](https://vimeo.com/) | 🟢 | / |
+| [Vudu](https://www.vudu.com/) | 🔴 | [investigation](https://github.com/dvlden/ultrawideo/issues/19#issuecomment-524646724)
+| [YouTube](https://www.youtube.com/) | 🟢 | / |
