@@ -1,13 +1,13 @@
-@import 'app/variables';
-@import 'app/reset';
-@import 'app/animations';
-@import 'app/base';
+@forward 'app/variables';
+@forward 'app/reset';
+@forward 'app/animations';
+@forward 'app/base';
 
-@import 'app/components/category';
-@import 'app/components/input';
-@import 'app/components/logo';
-@import 'app/components/option';
-@import 'app/components/switch';
+@forward 'app/components/category';
+@forward 'app/components/input';
+@forward 'app/components/logo';
+@forward 'app/components/option';
+@forward 'app/components/switch';
 
 .uwv {
   min-width: var(--container-width);

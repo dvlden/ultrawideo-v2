@@ -1,11 +1,11 @@
-@import 'app/variables';
-@import 'app/reset';
-@import 'app/animations';
-@import 'app/base';
+@forward 'app/variables';
+@forward 'app/reset';
+@forward 'app/animations';
+@forward 'app/base';
 
-@import 'app/components/category';
-@import 'app/components/list';
-@import 'app/components/logo';
+@forward 'app/components/category';
+@forward 'app/components/list';
+@forward 'app/components/logo';
 
 .logo {
   --icon-size: 64px;

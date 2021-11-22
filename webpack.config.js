@@ -59,7 +59,7 @@ module.exports = (env = {}, argv) => {
               options: {
                 implementation: require('sass'),
                 sassOptions: {
-                  fiber: require('fibers'),
+                  // fiber: require('fibers'),
                   outputStyle: 'expanded',
                   sourceMap: !isProduction
                 }
