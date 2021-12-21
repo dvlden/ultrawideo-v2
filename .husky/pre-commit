@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn test && yarn badges && git add README.md
+npm run test && npm run badges && git add README.md
