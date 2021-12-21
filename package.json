@@ -56,6 +56,7 @@
     "husky": "^7.0.4",
     "image-webpack-loader": "^8.0.1",
     "istanbul-badges-readme": "^1.8.1",
+    "jest": "^27.4.5",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss-loader": "^6.2.1",
     "pug": "^3.0.2",
@@ -69,7 +70,6 @@
   },
   "dependencies": {
     "eventemitter3": "^4.0.7",
-    "jest": "^27.4.5",
     "webextension-polyfill": "^0.8.0"
   }
 }
