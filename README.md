@@ -93,19 +93,20 @@ I want to take a minute and show my gratitude to every single donation that I re
 - Ronald Ison ☕️
 - Justin Tisdale 🥩
 - Tiburcio Garcia 🍺
-- Michael Downing 🥩 🍺
+- Michael Downing 🥩🍺
 - Carsten Range 🍺
 - ATM Music Studio 🍺
 - Mladen Savic 🍺
 - Benjamin Houix 🍺
 - René Kielder 🍺
-- Josiah Dines 🥩 🍺
+- Josiah Dines 🥩🍺
 - Roland Jacques 🥩
 - Aaron Grach ☕️
 - Jonathan Dyer 🍺
 - Ciprian Petrica 🥩
 - Karl-Michael Heinle ☕️
 - Kevin Marshall 🥩
+- Carlos Soutullo 🥩🍺
 
 🙌 THANKS, A LOT! 🙌
 
