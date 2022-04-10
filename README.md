@@ -109,6 +109,7 @@ I want to take a minute and show my gratitude to every single donation that I re
 - Carlos Soutullo 🥩🍺
 - Gregor Robakiewicz 🍺
 - Samuel Jones 🥩🍺
+- Guy-Steevy GNADOU ZABO 🥩🍺
 
 🙌 THANKS, A LOT! 🙌
 
