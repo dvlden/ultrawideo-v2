@@ -1,7 +1,7 @@
 {
   "name": "ultrawideo",
   "description": "The cross-browser extension that manipulates video aspect ratio to fit your entire screen.",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "private": true,
   "author": {
     "name": "Nenad Novaković",
@@ -40,36 +40,36 @@
     "> 1%"
   ],
   "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@babel/preset-env": "^7.16.5",
-    "autoprefixer": "^10.4.0",
-    "babel-jest": "^27.4.5",
-    "babel-loader": "^8.2.3",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.4",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.4",
     "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^10.2.0",
-    "css-loader": "^6.5.1",
-    "cssnano": "^5.0.14",
-    "fibers": "^5.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "cssnano": "^5.1.7",
+    "fibers": "^5.0.1",
     "file-loader": "^6.2.0",
     "generate-json-webpack-plugin": "^2.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
-    "image-webpack-loader": "^8.0.1",
+    "image-webpack-loader": "^8.1.0",
     "istanbul-badges-readme": "^1.8.1",
-    "jest": "^27.4.5",
-    "mini-css-extract-plugin": "^2.4.5",
+    "jest": "^27.5.1",
+    "mini-css-extract-plugin": "^2.6.0",
     "postcss-loader": "^6.2.1",
     "pug": "^3.0.2",
     "pug-loader": "^2.4.0",
-    "sass": "^1.45.1",
-    "sass-loader": "^12.4.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
     "sinon-chrome": "^3.0.1",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
     "zip-webpack-plugin": "^4.0.1"
   },
   "dependencies": {
     "eventemitter3": "^4.0.7",
-    "webextension-polyfill": "^0.8.0"
+    "webextension-polyfill": "^0.9.0"
   }
 }
