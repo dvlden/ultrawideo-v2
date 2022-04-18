@@ -31,16 +31,15 @@ Select one of the possible options to install this extension, depending on your 
 
 1. [Chrome Extension](https://chrome.google.com/webstore/detail/ultrawideo/bfbnagnphiehemkdgmmficmjfddgfhpl)
 2. [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/ultrawideo/)
-3. [Microsoft Edge Add-on](https://microsoftedge.microsoft.com/addons/detail/ultrawideo/nljggnfdanlckapcflfnhnckjbonppjh)
 
 > **Note for Opera browser users**: They allow installing extensions directly from the Chrome Web Store, but you must install this extension - [Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) to do that. I strongly suggest installing the extension this way because Opera add-ons' approval is insanely slow, and I delisted the extension from there.
 
-> **Note for Microsoft Edge browser users**: You may download the extension from official Microsoft Edge addons store, but they also allow you to install Chromium-based extensions from other stores as well. Visit the Chrome Web Store and install this extension from there.
+> **Note for Microsoft Edge browser users**: Visit the Chrome Web Store and install this extension from there.
 
 <br>
 
 ### Introduction
-The only extension on the market with two significant functionalities that no other extension in this category possess. 
+The only extension on the market with two significant functionalities that no other extension in this category possess.
 
 - Works on all video streaming platforms. ✅
 - Works on all embedded videos. ✅
@@ -60,8 +59,8 @@ It's for everyone who wants power over the video aspect ratio. This extension is
 ### How to use it?
 The extension is relatively easy to use but very powerful at what it does. It has a couple of options:
 
-- **Pause the extension** - *It will stop listening for all memory consuming events and restore any DOM manipulations.  *
-- **Toggle between modes** - *Toggle between different options will affect the video: normal, upscale, and stretch. *
+- **Pause the extension** - *It will stop listening for all memory consuming events and restore any DOM manipulations.*
+- **Toggle between modes** - *Toggle between different options will affect the video: normal, upscale, and stretch.*
 - **Configurable shortcuts** - *Set desired keystroke, with min/max of 3 keys to control pause or mode toggling.*
 
 <br>
@@ -75,8 +74,6 @@ It is working on all **globally popular** video streaming platforms. Making a li
 Just for a reference, if you come across any videos like the one below, it will be the best watching experience on ultrawide screens. On my screen 3440x1440, using **upscale** mode, it doesn't crop a single pixel of video content. **It's just made to be.**
 
 [Kevin James - Short Film](https://www.youtube.com/watch?v=tdSQkoryv3Q)
-
-
 
 <br>
 
