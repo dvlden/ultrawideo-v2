@@ -80,12 +80,16 @@
 
   list-style: none;
   padding-left: 0;
-  max-width: 300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   margin: var(--main-spacing) auto;
+
+  &-item {
+    margin-right: var(--base-spacing);
+    margin-left: var(--base-spacing);
+  }
 
   &-link {
     transition: opacity .2s ease-in-out;
