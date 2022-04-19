@@ -33,6 +33,10 @@
     height: 100vh !important;
   }
 
+  &-active &-normal {
+    object-fit: none !important;
+  }
+
   &-active &-upscale {
     object-fit: cover !important;
   }
