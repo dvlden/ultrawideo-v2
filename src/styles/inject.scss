@@ -34,7 +34,7 @@
   }
 
   &-active &-normal {
-    object-fit: none !important;
+    object-fit: contain !important;
   }
 
   &-active &-upscale {
