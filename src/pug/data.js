@@ -31,13 +31,13 @@ const options = [
     category: 'modes'
   },
   {
-    name: 'Toggle Pause',
+    name: 'Pause Extension',
     id: 'toggle_pause',
     placeholder: '0+meta+shift',
     category: 'shortcuts'
   },
   {
-    name: 'Toggle Modes',
+    name: 'Switch Mode',
     id: 'toggle_mode',
     placeholder: '9+meta+shift',
     category: 'shortcuts'

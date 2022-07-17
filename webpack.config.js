@@ -59,7 +59,6 @@ module.exports = (env = {}, argv) => {
               options: {
                 implementation: require('sass'),
                 sassOptions: {
-                  // fiber: require('fibers'),
                   outputStyle: 'expanded',
                   sourceMap: !isProduction
                 }
@@ -67,16 +66,6 @@ module.exports = (env = {}, argv) => {
             }
           ]
         },
-        // {
-        //   test: /\.js$/,
-        //   exclude: /node_modules/,
-        //   use: {
-        //     loader: 'babel-loader',
-        //     options: {
-        //       presets: ['@babel/preset-env']
-        //     }
-        //   }
-        // },
         {
           test: /\.(gif|png|jpe?g|svg)$/i,
           use: [
@@ -114,13 +103,8 @@ module.exports = (env = {}, argv) => {
         },
         {
           test: /\.pug$/,
-          use: {
-            loader: 'pug-loader',
-            options: {
-              pretty: !isProduction
-            }
-          }
-        }
+          loader: '@webdiscus/pug-loader',
+        },
       ]
     },
 
