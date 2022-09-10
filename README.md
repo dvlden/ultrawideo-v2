@@ -103,6 +103,7 @@ I want to take a minute and show my gratitude to every single donation that I re
 - Ciprian Petrica 🥩
 - Karl-Michael Heinle ☕️
 - Kevin Marshall 🥩
+- Leif-Erik Nordbø ☕️
 - Carlos Soutullo 🥩🍺
 - Gregor Robakiewicz 🍺
 - Samuel Jones 🥩🍺
