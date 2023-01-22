@@ -5,6 +5,13 @@
       all: unset !important;
     }
 
+    // Fix for YouTube TV
+    .ypl-video #id-video-player,
+    .ypl-video #id-player-wrapper {
+      width: 100vw !important;
+      height: 100vh !important;
+    }
+
     // Fix for Disney+
     .hudson-container {
       all: unset !important;

@@ -89,6 +89,20 @@ class Inject extends Storage {
 
     this.fullscreen.cachedElement.classList.toggle(classes.video)
     this.fullscreen.cachedElement.classList.toggle(classes.modes[this.data.mode])
+
+    // Timeout is needed, because some platforms (e.g. YouTube TV)
+    // delay adding styles on the element. So we have to delay normalization.
+    setTimeout(() => {
+      if (this.fullscreen.cachedElement.hasAttribute('style')) {
+        const normalize = this.fullscreen.cachedElement.getAttribute('style')
+          .replace(/\s*!important\s*/gi, '')
+
+        this.fullscreen.cachedElement.setAttribute(
+          'style',
+          normalize
+        )
+      }
+    }, 400)
   }
 
   registerFullscreenEvent () {
