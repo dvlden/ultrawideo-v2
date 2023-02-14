@@ -120,7 +120,7 @@ I want to take a minute and show my gratitude to every single donation that I re
 
 | Statements | Branches | Functions | Lines |
 | --- | --- | --- | --- |
-| ![Statements](https://img.shields.io/badge/statements-98.59%25-brightgreen.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-97.35%25-brightgreen.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-98.59%25-brightgreen.svg?style=flat) |
+| ![Statements](https://img.shields.io/badge/statements-98.45%25-brightgreen.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-97.36%25-brightgreen.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-98.45%25-brightgreen.svg?style=flat) |
 
 <br>
 

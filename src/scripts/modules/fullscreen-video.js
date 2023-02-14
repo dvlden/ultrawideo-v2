@@ -45,8 +45,11 @@ class FullscreenVideo extends Fullscreen {
       return srcElements[0]
     }
 
-    // No video element, die silently...
     // Something might have requested fullscreen, but it's not the video.
+    // Attempt to find the video
+    return Array.from(elements).filter(el => {
+      return el.tagName.toLowerCase() === 'video'
+    })[0]
   }
 }
 
