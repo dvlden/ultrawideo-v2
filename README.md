@@ -115,6 +115,7 @@ I want to take a minute and show my gratitude to every single donation that I re
 - LudiusMaximus ☕️
 - Jim Paradis 🥩🍺
 - Trent Campbell ☕️
+- Frederik Niedernolte ☕️
 
 🙌 THANKS, A LOT! 🙌
 
