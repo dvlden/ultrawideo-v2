@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://img.shields.io/github/license/dvlden/ultrawideo?color=%238a5fff&label=License&style=flat-square" alt="License" />
-  <img src="https://img.shields.io/github/package-json/version/dvlden/ultrawideo?color=%238a5fff&label=Version&style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/github/license/dvlden/ultrawideo-v2?color=%238a5fff&label=License&style=flat-square" alt="License" />
+  <img src="https://img.shields.io/github/package-json/version/dvlden/ultrawideo-v2?color=%238a5fff&label=Version&style=flat-square" alt="Version" />
   <img src="https://img.shields.io/chrome-web-store/users/bfbnagnphiehemkdgmmficmjfddgfhpl?color=rgb%28138%2C%2095%2C%20255%29&label=Chrome%20Users&style=flat-square" alt="Chrome Web Store" />
   <img src="https://img.shields.io/amo/users/ultrawideo?color=rgb%28138%2C%2095%2C%20255%29&label=Firefox%20Users&style=flat-square" alt="Mozilla Add-on" />
 </p>
@@ -24,6 +24,13 @@
 > Here's the list of all services where this extension passes or fails the tests. Feel free to contribute to the list! 🙏 [UltraWideo Tested List](./PLATFORMS.md)
 
 ---
+
+# Deprecated
+This extension version has been deprecated. Version from v3 and upwards is a full rewrite that is still hosted on GitHub, but is no longer open-source. 
+The reason is not harmful by any means. I simply decided that open source is not the best choice, moving forward, where the extension will be offering some Pro features that would require upgrade. Extension is still going to be 100% free with all of the features that it had + more. But some features that are for more advanced use and are harder to develop and maintain are going to require a Pro upgrade.
+
+Public repository for discussion/issues and suggestions is available under the following link:
+[UW Pub](https://github.com/dvlden/uw-pub)
 
 ### Getting started
 
